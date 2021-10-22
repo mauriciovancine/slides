@@ -1,27 +1,29 @@
----
-title: "Modelos em Ecologia: extrapolando nosso conhecimento sobre a distribuição das espécies <br><br><br>"
-subtitle: "Maurício H. Vancine"
-author: ""
-institute: "UNESP - Rio Claro <br> Laboratório de Ecologia Espacial e Conservação (LEEC)"
-date: "04/11/2021"
-output:
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts, custom.css]
-    lib_dir: libs
-    nature:
-      highlightStyle: rainbow
-      highlightLines: false
-      highlightSpans: true
-      countIncrementalSlides: false
-      slideNumberFormat: "%current%/%total%"
-      ratio: "16:9"
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Modelos em Ecologia: extrapolando nosso conhecimento sobre a distribuição das espécies    </title>
+    <meta charset="utf-8" />
+    <meta name="date" content="2021-04-11" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Modelos em Ecologia: extrapolando nosso conhecimento sobre a distribuição das espécies <br><br><br>
+## Maurício H. Vancine
+### 
+### UNESP - Rio Claro <br> Laboratório de Ecologia Espacial e Conservação (LEEC)
+### 04/11/2021
+
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE, encoding = "UTF-8")
-knitr::opts_chunk$set(fig.retina = 3, warning = FALSE, message = FALSE)
-library(tidyverse)
-```
+
+
 
 background-image: url(img/sdm_ajuste.png)
 background-size: 600px
@@ -53,7 +55,7 @@ background-position: 85% 80%
 
 ]
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Zurell (2020)](https://damariszurell.github.io/SDM-Intro/)
 
 ---
@@ -90,7 +92,7 @@ background-position: 60% 60%
 
 # 2. Visão geral
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -103,7 +105,7 @@ background-position: 50% 60%
 
 ## Protocolo padrão para modelos de distribuição de espécies
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
 
 ---
@@ -116,7 +118,7 @@ background-position: 5% 55%, 90% 55%
 
 ## Protocolo padrão para modelos de distribuição de espécies
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960), 
 [ODMAP v1.0 ](https://odmap.wsl.ch/)
 
@@ -130,7 +132,7 @@ background-position: 50% 70%
 
 ## Protocolo padrão para modelos de distribuição de espécies
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
 
 ---
@@ -161,8 +163,8 @@ background-position: 50% 70%
 - Aplicável a entidades que **não sejam espécies** (e.g. genes ou comunidades)
 - Aplicável a casos em que um **nicho é parcialmente capturado** em um modelo (área menor que a distribuição total)
 
-[Araújo & Peterson (2012)](https://doi.org/10.1890/11-1930.1), 
-[Peterson & Soberon (2012)](https://doi.org/10.4322/natcon.2012.019), 
+[Araújo &amp; Peterson (2012)](https://doi.org/10.1890/11-1930.1), 
+[Peterson &amp; Soberon (2012)](https://doi.org/10.4322/natcon.2012.019), 
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r), 
 [Adaptado de Luara Tourinho (2021)](https://youtu.be/l62rqAlV3aE)
 
@@ -184,11 +186,11 @@ background-position: 8% 70%, 80% 55%
 
 ### **Idealizações da realidade** e não a própria **realidade**
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-> (...) essentially, all models are wrong, but some are useful. George E. P. Box (1919-2013)
+&gt; (...) essentially, all models are wrong, but some are useful. George E. P. Box (1919-2013)
 
-[Silva & Catelli (2019)](http://dx.doi.org/10.1590/1806-9126-RBEF-2019-0029)
+[Silva &amp; Catelli (2019)](http://dx.doi.org/10.1590/1806-9126-RBEF-2019-0029)
 
 ---
 
@@ -202,7 +204,7 @@ background-position: 50% 75%
 
 ### Predizer a **distribuição de espécies** (ou entidades) a partir do **nicho ecológico**
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 [Soberón et al. (2017)](http://dx.doi.org/10.1016/j.rmb.2017.03.011)
 
@@ -225,7 +227,7 @@ background-position: 37% 70%, 95% 70%
 - Diversidade funcional
 - ...
 
-<br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Site pessoal do Raul Costa-Pereira](https://rcosta-pereira.weebly.com/),
 [Costa-Pereira et al. (2019)](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2019.0369)
 
@@ -248,15 +250,15 @@ background-position: 55% 80%, 92% 31%, 92% 62%, 92% 93%
 - Opinião de especialistas (IUCN)
 - ...
 
-<br><br>
-[Bahn & McGill (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00331.x),
-<br>
+&lt;br&gt;&lt;br&gt;
+[Bahn &amp; McGill (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00331.x),
+&lt;br&gt;
 [Jenkins et al. (2013)](https://doi.org/10.1073/pnas.1302251110),
-<br>
+&lt;br&gt;
 [BiodiversityMapping.org](https://biodiversitymapping.org/),
-<br>
+&lt;br&gt;
 [IUCN (2021)](https://www.iucnredlist.org/),
-<br>
+&lt;br&gt;
 [Warren (2012)](https://linkinghub.elsevier.com/retrieve/pii/S0169534712000754)
 
 ---
@@ -281,9 +283,9 @@ background-position: 80% 85%, 88% 20%
 
 ### 3. Metacomunidades
 
-<br><br><br><br><br><br><br><br>
-[McInerny & Etienne (2012)](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.12033),
-<br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[McInerny &amp; Etienne (2012)](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.12033),
+&lt;br&gt;
 [Sales et al. (2021)](https://doi.org/10.1016/j.actao.2020.103701)
 
 ---
@@ -299,15 +301,15 @@ background-position: 10% 70%, 47% 70%, 95% 70%
 ### 1. Modelagem de nicho ecológico
 
 - **Combinações de requisitos** que permitem a uma população
-**sobreviver e crescer (r > 0)** em um **determinado lugar**
+**sobreviver e crescer (r &gt; 0)** em um **determinado lugar**
 
-<br><br><br><br><br><br><br><br><br><br><br>
-[Chase & Leibold (2003)](https://press.uchicago.edu/ucp/books/book/chicago/E/bo3638660.html), 
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Chase &amp; Leibold (2003)](https://press.uchicago.edu/ucp/books/book/chicago/E/bo3638660.html), 
 [Holt (2009)](https://www.pnas.org/content/106/Supplement_2/19659),
 [Soberón (2010)](https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2009.06074.x),
 [Ovaskainen et al. (2016)](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780198714866.001.0001/acprof-9780198714866),
 [Gravel et al. (2019)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04006),
-[Murray & Sandercock (2019)](https://www.wiley.com/en-am/Population+Ecology+in+Practice-p-9780470674147)
+[Murray &amp; Sandercock (2019)](https://www.wiley.com/en-am/Population+Ecology+in+Practice-p-9780470674147)
 
 ---
 
@@ -323,11 +325,11 @@ background-position: 7% 70%, 49% 70%, 95% 70%
 
 - O modelo então estima as **condições ambientais favoráveis (nicho ecológico)** e **prediz** a distribuição da espécie
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-[Hirzel & Le Lay (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2008.01524.x),
-[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+[Hirzel &amp; Le Lay (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2008.01524.x),
+[Colwell &amp; Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
 
 ---
 
@@ -339,8 +341,8 @@ background-position: 60% 50%
 
 ## Espaço geográfico (G)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
 ---
@@ -353,8 +355,8 @@ background-position: 60% 50%
 
 ## Distribuição de espécies
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
 ---
@@ -367,9 +369,9 @@ background-position: 60% 50%
 
 ## Condições abióticas (A)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Grinnell (1917)](https://www.jstor.org/stable/info/10.2307/4072271),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -383,10 +385,10 @@ background-position: 60% 50%, 3% 75%
 
 ## Condições bióticas (B)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Elton (1927)](http://www.biodiversitylibrary.org/bibliography/7435),
-[MacArthur & Levins (1967)](https://www.journals.uchicago.edu/doi/abs/10.1086/282505),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[MacArthur &amp; Levins (1967)](https://www.journals.uchicago.edu/doi/abs/10.1086/282505),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -401,9 +403,9 @@ background-position: 60% 50%
 
 ## Condições abióticas (A) e bióticas (B)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -417,9 +419,9 @@ background-position: 60% 50%
 
 ## **Nicho fundamental**: todas as condições ambientais favoráveis
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -433,9 +435,9 @@ background-position: 60% 50%
 
 ### **Nicho realizado**: todas as condições ambientais favoráveis limitadas pela interação
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -455,9 +457,9 @@ background-position: 60% 50%
 
 ## **Nicho**: Hipervolume n-dimensional
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
@@ -480,9 +482,9 @@ background-position: 10% 65%, 90% 80%
 
 ### Inferir a **distribuição geográfica** de uma espécie a partir do **nicho ecológico**
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Colwell &amp; Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Soberón et al. (2017)](http://dx.doi.org/10.1016/j.rmb.2017.03.011)
 
@@ -496,9 +498,9 @@ background-position: 50% 60%
 
 ## Ocorrências no espaço geográfico
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
 
 ---
 
@@ -510,9 +512,9 @@ background-position: 50% 60%
 
 ## Condições ambientais para as ocorrências e para a área modelada
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
 
 ---
 
@@ -524,9 +526,9 @@ background-position: 50% 60%
 
 ## Estimativa do nicho realizado
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
 
 ---
 
@@ -538,9 +540,9 @@ background-position: 50% 60%
 
 ## Predição geográfica do nicho realizado estimado
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
 
 ---
 
@@ -564,9 +566,9 @@ background-position: 60% 50%
 
 ## Limitações pela área acessível (dispersão ou movimento) (M)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
@@ -581,9 +583,9 @@ background-position: 60% 50%
 
 ## Limitações pela área acessível (dispersão ou movimento) (M)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
@@ -606,7 +608,7 @@ background-position: 15% 60%, 85% 60%
 
 - O limite deve considerar as **condições de dispersão históricas** das espécies
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780),
 [Owens et al. (2013)](https://www.sciencedirect.com/science/article/pii/S0304380013002159),
 [Machado-Stredel et al. (2021)](https://escholarship.org/uc/item/8hq04438)
@@ -621,9 +623,9 @@ background-position: 60% 50%
 
 ## Populações fonte e ralo (*source-sink*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
@@ -638,9 +640,9 @@ background-position: 60% 50%
 
 ## Populações fonte e ralo (*source-sink*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
@@ -670,7 +672,7 @@ background-position: 60% 49%, 98% 45%
 
 [Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
 [Bruno et al. (2003)](https://www.sciencedirect.com/science/article/pii/S0169534702000459),
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -684,8 +686,8 @@ background-position: 60% 75%
 
 ## Variações das condições abióticas e bióticas em **função do tempo**
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Lima-Ribeiro & Diniz-Filho (2013)](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Lima-Ribeiro &amp; Diniz-Filho (2013)](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
 
 ---
 
@@ -697,8 +699,8 @@ background-position: 60% 50%
 
 ## O que de fato modelamos?
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Soberón &amp; Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
 [Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 
@@ -712,9 +714,9 @@ background-position: 10% 45%, 85% 79%, 85% 20%
 
 ## **"Ruído Eltoniano"**: desconsideramos as condições bióticas 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Colwell &amp; Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
 [Wisz et al. (2013)](https://doi.org/10.1111/j.1469-185X.2012.00235.x)
 [Dormann et al. (2018)](https://onlinelibrary.wiley.com/doi/10.1111/geb.12759)
 
@@ -728,13 +730,13 @@ background-position: 25% 65%, 85% 65%, 20% 17%, 43% 17%, 59% 17%, 82% 17%
 
 ## Entretanto...
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 * Esquilo: *Sciurus aestuans* (catinguelê); Palmeira: *Syagrus romanzoffiana* (jerivá)
-<br>
+&lt;br&gt;
 Imagens:
 [Wikipedia](https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal),
 [Aves e Árvores](https://www.avesarvores.com.br/2016/07/os-esquilos-e-as-arvores.html),
-[Preuss & Padial (2021)](https://doi.org/10.3897/neotropical.16.e64892)
+[Preuss &amp; Padial (2021)](https://doi.org/10.3897/neotropical.16.e64892)
 
 ---
 
@@ -758,10 +760,10 @@ ocorrência e não ocorre nas regiões inadequadas
 .pull-right[
 ]
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
-[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
-[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
+[Colwell &amp; Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón &amp; Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
 [Soberón et al. (2017)](http://dx.doi.org/10.1016/j.rmb.2017.03.011)
 
@@ -786,8 +788,8 @@ background-position: 90% 10%, 90% 83%
 1. Estabelecer refúgios climáticos
 1. Estabelecimento e eficiência de áreas protegidas
 
-<br>
-**"Species Distribution Modeling in Latin America: <br>
+&lt;br&gt;
+**"Species Distribution Modeling in Latin America: &lt;br&gt;
 A 25-Year Retrospective Review"**
 
 [Urbina-Cardona et al. (2019)](http://journals.sagepub.com/doi/10.1177/1940082919854058)
@@ -803,9 +805,9 @@ background-position: 15% 50%, 85% 50%
 
 ## Visão geral
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r),
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+[Brown &amp; Yoder (2015)](https://doi.org/10.1002/ece3.1418)
 
 ---
 
@@ -817,8 +819,8 @@ background-position: 10% 55%, 85% 10%, 85% 85%
 
 ## Ocorrências e Variáveis  ambientais
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Brown &amp; Yoder (2015)](https://doi.org/10.1002/ece3.1418)
 
 ---
 
@@ -830,9 +832,9 @@ background-position: 32% 70%, 80% 70%
 
 ## Vetor e raster
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Campbell & Shin (2012)](https://2012books.lardbucket.org/books/geographic-information-system-basics/index.html),
-<br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Campbell &amp; Shin (2012)](https://2012books.lardbucket.org/books/geographic-information-system-basics/index.html),
+&lt;br&gt;
 [ESRI (2019)](https://learn.arcgis.com/en/arcgis-book/)
 
 
@@ -848,9 +850,9 @@ background-position: 8% 68%, 90% 70%
 
 ## Pontos, linhas e polígonos + Tabela de atributos
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Silva et al. (in prep.)](https://paternogbc.github.io/livro_aer/), 
-[Tennekes & Nowosad (in prep.)](https://r-tmap.github.io/tmap-book/index.html)
+[Tennekes &amp; Nowosad (in prep.)](https://r-tmap.github.io/tmap-book/index.html)
 
 ---
 
@@ -869,7 +871,7 @@ background-position: 95% 10%, 50% 80%
 #### **.shx**: arquivo de índice que une o .shp ao .dbf
 #### **.prj**: contém as informações do sistema de referências de coordenadas
 
-<br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [ESRI (1998)](https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf),
 [GIS Resources (2014)](https://gisresources.com/understanding-shapefile-shp-file-format/)
 
@@ -885,7 +887,7 @@ background-position: 10% 65%, 85% 65%
 
 ### Matriz de valores - contínuos ou categóricos
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [National Ecological Observatory Network (NEON)](https://www.neonscience.org/resources/learning-hub/tutorials/dc-raster-data-r),
 [Lovelace et al. (2020)](https://geocompr.robinlovelace.net/)
 
@@ -901,7 +903,7 @@ background-position: 10% 65%, 55% 35%, 95% 39%, 85% 90%
 
 ### Propriedades - Extensão e resolução
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [National Ecological Observatory Network (NEON)](https://www.neonscience.org/resources/learning-hub/tutorials/dc-raster-data-r)
 
 ---
@@ -918,7 +920,7 @@ background-position: 50% 65%
 
 ### **.tif**: arquivo matricial georreferenciamento com informações de georreferenciamento
 
-<br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [LuminFire Developers](https://luminfire.com/technologies/geotiff/),
 [GeoTIFF](https://trac.osgeo.org/geotiff)
 
@@ -952,7 +954,7 @@ background-position: 95% 75%
 ### Coleções científicas e museus (Museu Nacional, ...)
 ### Banco de dados (GBIF, SpeciesLink, ...)
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 [Incêndio no Museu Nacional (RJ) 02/09/2018. Foto: Ricardo Moraes/Reuters](https://g1.globo.com/pop-arte/noticia/2018/09/03/principais-museus-do-mundo-utilizam-patrocinio-privado-para-manter-estrutura-e-expandir-acervo-veja-lista.ghtml)
 
 ---
@@ -976,7 +978,7 @@ background-position: 90% 15%, 90% 58%, 90% 95%, 10% 85%
 - [Botanical Information and Ecology Network (BIEN)](https://bien.nceas.ucsb.edu/bien/)
 - [speciesLink](https://specieslink.net/)
 
-<br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Maitner et al. (2017)](https://doi.org/10.1111/2041-210X.12861)
 
 ---
@@ -1030,9 +1032,9 @@ background-position: 8% 75%, 94% 63%
 
 - 1.144.629 (total) e 882.468 (válidos) ocorrências para 4345 espécies
 - Grupos: vertebrados , artropodes e angiospermas
-- Todos as ocorrências < 1km de rotas de acesso (estradas e rios)
+- Todos as ocorrências &lt; 1km de rotas de acesso (estradas e rios)
 
-<br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Oliveira et al. (2016)](https://doi.org/10.1111/ddi.12489)
 
 ---
@@ -1050,7 +1052,7 @@ background-position: 7% 75%, 90% 75%
 - 742 milhões de ocorrências de 374.900 espécies
 - Representando 6,74% do globo amostrado
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Hughes et al. (2021)](https://doi.org/10.1111/ecog.05926)
 
 ---
@@ -1065,7 +1067,7 @@ background-position: 50% 65%
 
 ### Formato
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [National Ecological Observatory Network (NEON)](https://www.neonscience.org/resources/learning-hub/tutorials/dc-raster-data-r)
 
 ---
@@ -1105,8 +1107,8 @@ background-position: 13% 25%, 7% 80%, 90% 60%
 
 ## Variáveis ambientais
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Morales-Barbero & Vega-Álvarez (2018)](https://onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13124)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Morales-Barbero &amp; Vega-Álvarez (2018)](https://onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13124)
 
 ---
 
@@ -1120,12 +1122,12 @@ background-position: 10% 50%, 57% 15%, 94% 15%, 83% 85%
 
 ### Interpolação
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Biodiversity and Climate Change Virtual Laboratory (BCCVL)](https://support.bccvl.org.au/support/home),
-<br>
+&lt;br&gt;
 [National Ecological Observatory Network (NEON)](https://www.neonscience.org/resources/learning-hub/tutorials/spatial-interpolation-basics),
-<br>
-[Fick & Hijmans (2017)](https://onlinelibrary.wiley.com/doi/10.1002/joc.5086)
+&lt;br&gt;
+[Fick &amp; Hijmans (2017)](https://onlinelibrary.wiley.com/doi/10.1002/joc.5086)
 
 ---
 
@@ -1162,10 +1164,10 @@ background-position: 10% 50%, 57% 15%, 94% 15%, 83% 85%
 | BIO18    | Precipitação | Prec. do trim. mais quente  |
 | BIO19    | Precipitação | Prec. do trim. mais frio    |
 
-*Temp. = Temperatura; Prec. = Precipitação; <br>
+*Temp. = Temperatura; Prec. = Precipitação; &lt;br&gt;
 trim. = Trimestre; 
 
-[O’Donnell & Ignizio (2012)](https://pubs.usgs.gov/ds/691/ds691.pdf)
+[O’Donnell &amp; Ignizio (2012)](https://pubs.usgs.gov/ds/691/ds691.pdf)
 ]
 
 ---
@@ -1189,7 +1191,7 @@ background-position: 15% 75%, 80% 70%
 - William of Ockham's (1285–1348)
 - "É fútil fazer com mais o que pode ser feito com menos"
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Coelho et al. (2018)](https://doi.org/10.1111/ecog.04228),
 [What does Occam’s razor mean? (2019)](https://englishtalkzone.com/what-does-occams-razor-mean/)
 
@@ -1206,12 +1208,12 @@ background-position: 75% 40%, 75% 80%
 ### Colinearidade - Correlação (Pearson ou Spearman)
 
 - Mede o grau de relação (positiva ou negativa) entre duas variáveis
-<br><br>
-- r > |0.7|: indica alta correlação
-<br><br>
-- $r = \dfrac{cov(X, Y)}{\sqrt{var(X) . var(Y)}}$
+&lt;br&gt;&lt;br&gt;
+- r &gt; |0.7|: indica alta correlação
+&lt;br&gt;&lt;br&gt;
+- `\(r = \dfrac{cov(X, Y)}{\sqrt{var(X) . var(Y)}}\)`
 
-<br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Zuur et al. (2010)](https://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x),
 [Dormann et al. (2012)](https://doi.org/10.1111/j.1600-0587.2012.07348.x),
 [Naimi et al. (2014)](https://doi.org/10.1111/j.1600-0587.2013.00205.x),
@@ -1231,16 +1233,16 @@ background-position: 80% 80%
 ### Colinearidade - Fator de Inflação de Variância (VIF)
 
 - Medida da quantidade de multicolinearidade em um conjunto de múltiplas variáveis
-<br><br>
+&lt;br&gt;&lt;br&gt;
 - VIF = 1: não há multicolinearidade entre as variáveis
-- VIF > 2 ou VIF > 5 ou VIF > 10: indica alta multicolinearidade (depende do autor)
-<br><br>
-- $VIF_i = \dfrac{1}{1 - R_i^2}$
+- VIF &gt; 2 ou VIF &gt; 5 ou VIF &gt; 10: indica alta multicolinearidade (depende do autor)
+&lt;br&gt;&lt;br&gt;
+- `\(VIF_i = \dfrac{1}{1 - R_i^2}\)`
 
 - (a) r = 0.8946 e VIF = 5.007
 - (b) r = 0.7697 e VIF = 2.453
 
-<br>
+&lt;br&gt;
 [Zuur et al. (2010)](https://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x),
 [Dormann et al. (2012)]( https://doi.org/10.1111/j.1600-0587.2012.07348.x),
 [Naimi et al. (2014)]( https://doi.org/10.1111/j.1600-0587.2013.00205.x),
@@ -1257,8 +1259,8 @@ background-position: 10% 55%, 75% 55%
 
 ## Métodos ou algoritmos
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Brown &amp; Yoder (2015)](https://doi.org/10.1002/ece3.1418)
 
 ---
 
@@ -1270,9 +1272,9 @@ background-position: 10% 50%, 90% 50%
 
 ## Métodos modelam diferentes áreas do Diagrama BAM
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Sillero (2011)](https://doi.org/10.1016/j.ecolmodel.2011.01.018),
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+[Brown &amp; Yoder (2015)](https://doi.org/10.1002/ece3.1418)
 
 ---
 
@@ -1284,7 +1286,7 @@ background-position: 50% 55%
 
 ## Depende dos dados de presença e ausência da espécie
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Modificado com autorização de Esser (2021)](https://luizfesser.wordpress.com/2021/06/08/are-pseudoabsences-and-background-the-same-thing/)
 
 ---
@@ -1300,7 +1302,7 @@ background-position: 50% 85%
 - **Zeros falsos**: falta de experiência do observador (a – b) ou projeto experimental pobre (c – h)
 - **Zeros verdadeiros**: relacionados ao sistema ecológico em estudo - *zeros estruturais* (i – k) ou emergentes da variabilidade de amostragem - *zeros aleatórios* (l)
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Blasco‐Moreno et al. (2019)](https://doi.org/10.1111/2041-210X.13185)
 
 ---
@@ -1313,7 +1315,7 @@ background-position: 50% 55%
 
 ## Depende dos dados de presença e ausência da espécie
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Modificado com autorização de Esser (2021)](https://luizfesser.wordpress.com/2021/06/08/are-pseudoabsences-and-background-the-same-thing/)
 
 ---
@@ -1330,7 +1332,7 @@ background-position: 50% 75%
 - **Pseudo-ausência**: dados de ausência gerados por amostragem aleatória (seguindo ou não regras geográficas ou ambientais), geralmente em número igual ao número de presenças
 - **Background**: dados gerados para amostrar as condições da área de estudo (quanto mais, melhor)
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Modificado com autorização de Esser (2021)](https://luizfesser.wordpress.com/2021/06/08/are-pseudoabsences-and-background-the-same-thing/)
 
 ---
@@ -1345,7 +1347,7 @@ background-position: 25% 65%, 75% 65%
 
 - Envelope climático com escores
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Nix (1986)](https://www.environment.gov.au/science/abrs/publications/flora-fauna/07),
 [Booth et al. (2014)](https://onlinelibrary.wiley.com/doi/10.1111/ddi.12144)
 
@@ -1361,7 +1363,7 @@ background-position: 50% 75%
 
 - Distância ponto a ponto
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Carpenter et al. (1993)](http://link.springer.com/10.1007/BF00051966)
 
 ---
@@ -1378,8 +1380,8 @@ background-position: 15% 70%, 70% 75%
 - Envelope de Mahalanobis é **elíptico**, refletindo melhor a tendência central da teoria do nicho
 - Previsões são baseadas em **todos os dados**, sendo menos sensíveis a valores discrepantes
 
-<br><br><br><br><br><br><br><br><br><br><br>
-[Farber & Kadmon (2003)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002003277),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Farber &amp; Kadmon (2003)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002003277),
 [Jiménez et al. (2019)](https://www.sciencedirect.com/science/article/pii/S0304380019300407)
 
 ---
@@ -1394,7 +1396,7 @@ background-position: 50% 85%
 
 - Distribuição de erros binomial
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2002)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041)
 
 ---
@@ -1410,7 +1412,7 @@ background-position: 50% 83%
 - Distribuição de erros binomial
 - Funções de suavização 
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2002)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041)
 
 ---
@@ -1426,9 +1428,9 @@ background-position: 15% 65%, 85% 65%
 - Cria diversas **árvores de decisão** ('floresta') por **bootstrap** (reamostragem)
 - Combina os **resultados** de cada árvore em uma última classificação (categórico) ou regressão (contínuo)
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Breiman (2001)](http://link.springer.com/10.1023/A:1010933404324),
-[Liaw & Wiener (2002)](https://cogns.northwestern.edu/cbmg/LiawAndWiener2002.pdf),
+[Liaw &amp; Wiener (2002)](https://cogns.northwestern.edu/cbmg/LiawAndWiener2002.pdf),
 [Prasad et al. (2006)](https://link.springer.com/article/10.1007%2Fs10021-005-0054-1),
 [Cutler et al. (2007)](https://doi.org/10.1890/07-0539.1),
 [Sheykhmousa et al. (2020)](https://doi.org/10.1109/JSTARS.2020.3026724),
@@ -1447,8 +1449,8 @@ background-position: 45% 65%
 - Cria **hiperplanos** através de **vetores de suporte** considerando features
 - Faz a classificação (categórico) ou regressão (contínuo) para **separar** os dados em duas ou mais partes
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
-[Tax & Duin (2004)](https://link.springer.com/article/10.1023/B:MACH.0000008084.60811.49),
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Tax &amp; Duin (2004)](https://link.springer.com/article/10.1023/B:MACH.0000008084.60811.49),
 [Guo et al. (2005)](https://doi.org/10.1016/j.ecolmodel.2004.07.012),
 [Drake et al. (2006)](https://doi.org/10.1111/j.1365-2664.2006.01141.x),
 [Dou et al. (2019)](https://doi.org/10.3390/rs11060638)
@@ -1467,9 +1469,9 @@ background-position: 5% 65%, 95% 65%
 - Usa diferentes curvas ('features') para **ajustar a máxima entropia** e achar os valores de adequabilidade ambiental
 - Dependente de **parâmetros** [prevalência (0.5) e regularização (ajuste)] e **limite do background** 
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Phillips et al. (2006)](https://linkinghub.elsevier.com/retrieve/pii/S030438000500267X),
-[Phillips & Dudík (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.0906-7590.2008.5203.x),
+[Phillips &amp; Dudík (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.0906-7590.2008.5203.x),
 [Elith et al. (2011)](https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2010.00725.x)
 [Phillips et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.03049),
 [BCCVL](https://support.bccvl.org.au/support/home),
@@ -1498,7 +1500,7 @@ background-position: 95% 65%
 - Genetic Algorithm for Rule-set Production (GARP)
 - Maxlike
 
-[Fletcher & Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
+[Fletcher &amp; Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
 
 ---
 
@@ -1521,7 +1523,7 @@ background-position: 45% 30%, 60% 90%, 75% 30%, 90% 90%
 - [ssdm](https://cran.r-project.org/web/packages/ssdm/)
 - [ShinyBIOMOD](https://gitlab.com/IanOndo/shinybiomod)
 
-<br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Lista de pacotes no R](https://github.com/helixcn/sdm_r_packages)
 
 ---
@@ -1546,9 +1548,9 @@ background-position: 10% 55%, 55% 55%, 84% 25%, 87% 93%
 
 ## Métricas de avaliação
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418),
-[Lima-Ribeiro & Diniz-Filho (2013)](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Brown &amp; Yoder (2015)](https://doi.org/10.1002/ece3.1418),
+[Lima-Ribeiro &amp; Diniz-Filho (2013)](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
 
 ---
 
@@ -1566,7 +1568,7 @@ background-position: 90% 62%
 ### Teste (flecha inferior)
 - Dados usados para **avaliar** o modelo
 
-<br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -1606,17 +1608,17 @@ background-position: 90% 52%
 ## Tipos de partições para avaliação interna
 
 - **Split sample**  
-Divide aleatoriamente as ocorrências em dois conjuntos, <br> geralmente 70% para treino e 30% para teste e <br> faz repetições aleatórias desses conjuntos
+Divide aleatoriamente as ocorrências em dois conjuntos, &lt;br&gt; geralmente 70% para treino e 30% para teste e &lt;br&gt; faz repetições aleatórias desses conjuntos
 
 - **K-fold cross-validation**  
-Divide as ocorrências em conjuntos iguais (k), <br> um dos conjuntos vai para teste e os outros para treino, <br> alternando até todas as partes irem para teste
+Divide as ocorrências em conjuntos iguais (k), &lt;br&gt; um dos conjuntos vai para teste e os outros para treino, &lt;br&gt; alternando até todas as partes irem para teste
 
 - **Leave one-out CV (Jackknife)**  
-Uma ocorrência para teste e o restante para treino, <br> alterando até todas as ocorrências irem para teste
+Uma ocorrência para teste e o restante para treino, &lt;br&gt; alterando até todas as ocorrências irem para teste
 
 - **Bootstrap**  
-Reamostragem (mesmas ocorrências podem ir para  <br>treino e teste), usado mais para medir incertezas dos ajustes dos modelos
-<br>
+Reamostragem (mesmas ocorrências podem ir para  &lt;br&gt;treino e teste), usado mais para medir incertezas dos ajustes dos modelos
+&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -1637,7 +1639,7 @@ background-position: 60% 80%
 
 ### Geralmente aleatória, mas pode ser por regras geográficas (G) ou ambientais (E)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Valavi et al. (2018)](https://onlinelibrary.wiley.com/doi/10.1111/2041-210X.13107)
 
 ---
@@ -1651,17 +1653,17 @@ background-position: 83% 52%
 ## Tipos de partições para avaliação interna
 
 - **Split sample**  
-Divide aleatoriamente as ocorrências em dois conjuntos, <br> geralmente 70% para treino e 30% para teste e <br> faz repetições aleatórias desses conjuntos
+Divide aleatoriamente as ocorrências em dois conjuntos, &lt;br&gt; geralmente 70% para treino e 30% para teste e &lt;br&gt; faz repetições aleatórias desses conjuntos
 
 - **K-fold cross-validation**  
-Divide as ocorrências em conjuntos iguais (k), <br> um dos conjuntos vai para teste e as outras para treino, <br> alternando até todas as partes irem para teste
+Divide as ocorrências em conjuntos iguais (k), &lt;br&gt; um dos conjuntos vai para teste e as outras para treino, &lt;br&gt; alternando até todas as partes irem para teste
 
 - **Leave one-out CV (Jackknife)**  
-Uma ocorrência para teste e o restante para treino, <br> alterando até todas as ocorrências irem para teste
+Uma ocorrência para teste e o restante para treino, &lt;br&gt; alterando até todas as ocorrências irem para teste
 
 - **Bootstrap**  
-Reamostragem (mesmas ocorrências podem ir para  <br>treino e teste), usado mais para medir incertezas dos ajustes dos modelos
-<br>
+Reamostragem (mesmas ocorrências podem ir para  &lt;br&gt;treino e teste), usado mais para medir incertezas dos ajustes dos modelos
+&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -1680,7 +1682,7 @@ background-position: 10% 62%, 90% 58%
 
 ## Valores observados vs valores preditos [treino e teste]
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -1693,7 +1695,7 @@ background-position: 10% 62%, 90% 58%
 
 ## Valores observados vs valores preditos [teste]
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -1708,9 +1710,9 @@ background-position: 10% 62%, 90% 90%
 
 .pull-left[]
 .pull-right[
-$$Modelo: P(x) = \dfrac{1}{1 + e^{-(\beta_0+\beta_1 x)}}$$
-$Parametros :\beta_1 = 1.169; \beta_0 = -0.733$
-$$Modelo: P(x) = \dfrac{1}{1 + e^{-(-0.733+1.169 x)}}$$
+`$$Modelo: P(x) = \dfrac{1}{1 + e^{-(\beta_0+\beta_1 x)}}$$`
+`\(Parametros :\beta_1 = 1.169; \beta_0 = -0.733\)`
+`$$Modelo: P(x) = \dfrac{1}{1 + e^{-(-0.733+1.169 x)}}$$`
 
 ]
 
@@ -1726,17 +1728,17 @@ background-position: 10% 62%
 
 .pull-left[]
 .pull-right[
-$$Modelo: P(x) = \dfrac{1}{1 + e^{-(\beta_0+\beta_1 x)}}$$
-$Parametros :\beta_1 = 1.169; \beta_0 = -0.733$
-$$Modelo: P(x) = \dfrac{1}{1 + e^{-(-0.733+1.169 x)}}$$
-<br>
+`$$Modelo: P(x) = \dfrac{1}{1 + e^{-(\beta_0+\beta_1 x)}}$$`
+`\(Parametros :\beta_1 = 1.169; \beta_0 = -0.733\)`
+`$$Modelo: P(x) = \dfrac{1}{1 + e^{-(-0.733+1.169 x)}}$$`
+&lt;br&gt;
 Seja x os valores de precipitação padronizados:
-<br><br>
-$Para: x = -2; P(x) = 0.04431945; y = 0$ <br>
-$Para: x = -1; P(x) = 0.1298823; y = 0$ <br>
-$Para: x = 0;  P(x) = 0.3245367; y = 0$ <br>
-$Para: x = 1; P(x) = 0.6073055; y = 1$ <br>
-$Para: x = 2; P(x) =  0.832716; y = 1$ <br>
+&lt;br&gt;&lt;br&gt;
+`\(Para: x = -2; P(x) = 0.04431945; y = 0\)` &lt;br&gt;
+`\(Para: x = -1; P(x) = 0.1298823; y = 0\)` &lt;br&gt;
+`\(Para: x = 0;  P(x) = 0.3245367; y = 0\)` &lt;br&gt;
+`\(Para: x = 1; P(x) = 0.6073055; y = 1\)` &lt;br&gt;
+`\(Para: x = 2; P(x) =  0.832716; y = 1\)` &lt;br&gt;
 ]
 
 ---
@@ -1755,7 +1757,7 @@ background-position: 10% 55%, 90% 58%
 
 ### **Limiares de corte** (*thresholds*) para considerar os acertos e erros do modelo
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 ---
@@ -1771,7 +1773,7 @@ background-position: 10% 55%
 .pull-left[]
 .pull-right[
 
-<br>
+&lt;br&gt;
 
 ### Erro de omissão
 A observação é de presença (1), mas a predição é de ausência (0) - **ausência falsa**
@@ -1781,7 +1783,7 @@ A observação é de ausência (0), mas a predição é de presença (1) - **pre
 
 ]
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
 
 
@@ -1811,10 +1813,10 @@ background-position: 10% 78%, 93% 60%
 - **Especificidade** (proporção de ausências verdadeiras - TAR)[0:1]
 - **AUC** (probabilidade de classificação correta)[0:1]
 - **Kappa** (medida de concordância da classificação)[-1:1]
-- **TSS** (compara o número de classificações corretas, menos <br> aquelas atribuídas aleatoriamente) [-1:1]
+- **TSS** (compara o número de classificações corretas, menos &lt;br&gt; aquelas atribuídas aleatoriamente) [-1:1]
 
-<br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1828,22 +1830,22 @@ background-position: 92% 5%, 90% 58%
 
 - **Sensibilidade** (proporção de presenças verdadeiras - TPR)[0:1]
 
-$sensibilidade = a/(a+c)$
+`\(sensibilidade = a/(a+c)\)`
 
 - **Especificidade** (proporção de ausências verdadeiras - TAR)[0:1]
 
-$especificidade = d/(b+d)$
+`\(especificidade = d/(b+d)\)`
 
 - **1 - Especificidade** (proporção de presenças falsas - FPR)[0:1]
 
-$1 - especificidade = b/(b+d)$
+`\(1 - especificidade = b/(b+d)\)`
 
 - **ROC** (sensibilidade ~ (1 - especificidade))
 
 - **AUC** (probabilidade de classificação correta)[0:1]
 
-<br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1855,8 +1857,8 @@ background-position: 10% 60%, 90% 50%
 
 ### ROC (Característica de Operação do Receptor - *Receiver Operating Characteristic*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1868,8 +1870,8 @@ background-position: 10% 60%, 90% 50%
 
 ### ROC (Característica de Operação do Receptor - *Receiver Operating Characteristic*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1880,8 +1882,8 @@ background-position: 10% 60%, 90% 50%
 
 ### ROC (Característica de Operação do Receptor - *Receiver Operating Characteristic*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1893,8 +1895,8 @@ background-position: 10% 60%, 90% 50%
 
 ### ROC (Característica de Operação do Receptor - *Receiver Operating Characteristic*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1906,8 +1908,8 @@ background-position: 10% 60%, 90% 50%
 
 ### ROC (Característica de Operação do Receptor - *Receiver Operating Characteristic*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
 
 ---
 
@@ -1919,8 +1921,8 @@ background-position: 10% 59%, 60% 27%, 86% 61%
 
 ## AUC (Área Abaixo da Curva - *Area Under the Curve*)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article), [Araújo et al. (2005)](https://doi.org/10.1111/j.1365-2486.2005.01000.x), [Jiménez-Valverde (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00683.x). Mas ver [Lobo et al. (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00358.x)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article), [Araújo et al. (2005)](https://doi.org/10.1111/j.1365-2486.2005.01000.x), [Jiménez-Valverde (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00683.x). Mas ver [Lobo et al. (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00358.x)
 
 ---
 
@@ -1932,9 +1934,9 @@ background-position: 10% 60%, 50% 50%, 90% 55%
 
 ## Métricas dependentes de limiares
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Liu et al. (2005)](https://onlinelibrary.wiley.com/doi/10.1111/j.0906-7590.2005.03957.x), 
-[Jiménez-Valverde (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00683.x), [Li & Guo (2013)](https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2013.07585.x), [Liu et al. (2013)](https://onlinelibrary.wiley.com/doi/10.1111/jbi.12058), [Liu et al. (2016)](https://onlinelibrary.wiley.com/doi/10.1002/ece3.1878),
+[Jiménez-Valverde (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00683.x), [Li &amp; Guo (2013)](https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2013.07585.x), [Liu et al. (2013)](https://onlinelibrary.wiley.com/doi/10.1111/jbi.12058), [Liu et al. (2016)](https://onlinelibrary.wiley.com/doi/10.1002/ece3.1878),
 [Pearson et al. (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2699.2006.01594.x)
 
 ---
@@ -1949,22 +1951,22 @@ background-position: 80% 40%
 
 ### Kappa (K) [-1 a +1]
 
-$K = \frac{\frac{a+d}{N}-\frac{(a+b)(a+c)+(c+d)(b+d)}{N^2}}{1-\frac{(a+b)(a+c)+(c+d)(d+b)}{N^2}} = \frac{P_o - P_e}{1 - P_e}$, onde P = acurácia
+`\(K = \frac{\frac{a+d}{N}-\frac{(a+b)(a+c)+(c+d)(b+d)}{N^2}}{1-\frac{(a+b)(a+c)+(c+d)(d+b)}{N^2}} = \frac{P_o - P_e}{1 - P_e}\)`, onde P = acurácia
 
-- K > 0.75: Excelente
-- 0.40 > K > 0.75: Bom
-- K < 0.40: pobre
+- K &gt; 0.75: Excelente
+- 0.40 &gt; K &gt; 0.75: Bom
+- K &lt; 0.40: pobre
 
 ### TSS (*True Skill Statistic*) [-1 a +1]
 
-$TSS = \frac{ad-bc}{(a+c)(b+d)} = Sensitividade + Especificidade - 1$
+`\(TSS = \frac{ad-bc}{(a+c)(b+d)} = Sensitividade + Especificidade - 1\)`
 
 - TSS ≅ +1: concordância perfeita
-- TSS <= 0: desempenho não melhor do que aleatório
-- Indicativos: TSS > 0.5, TSS > 0.7, TSS > 0.8 e TSS > 0.9
-<br>
-[Landis & Koch (1977)](),
-[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article),
+- TSS &lt;= 0: desempenho não melhor do que aleatório
+- Indicativos: TSS &gt; 0.5, TSS &gt; 0.7, TSS &gt; 0.8 e TSS &gt; 0.9
+&lt;br&gt;
+[Landis &amp; Koch (1977)](),
+[Fielding &amp; Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article),
 [Allouche et al. (2006)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01214.x)
 
 ---
@@ -1984,7 +1986,7 @@ background-position: 95% 65%
 - Liu et al. (2013) mostraram que o limiar que maximiza as estatísticas (max-TSS ou max-Kappa) é equivalente ao limiar de **máxima soma da sensibilidade e especificidade** (max-SSS)
 - Essa estratégia gera o **mesmo limiar** para métodos de somente-presença, presença-pseudo-ausência e presença-background
 
-<br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Allouche et al. (2006)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01214.x),
 [Liu et al. (2013)](https://onlinelibrary.wiley.com/doi/10.1111/jbi.12058),
 [Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r),
@@ -2007,8 +2009,8 @@ background-position: 10% 55%, 80% 55%
 
 ## Estimar a distribuição para não temos dados
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Brown &amp; Yoder (2015)](https://doi.org/10.1002/ece3.1418)
 
 ---
 
@@ -2050,8 +2052,8 @@ background-position: 10% 60%, 85% 60%
 
 ## Diferentes estimativas do nicho - diferentes predições geográficas
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-[Araújo & New (2007)](https://doi.org/10.1016/j.tree.2006.09.010://doi.org/10.1002/ece3.1418)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Araújo &amp; New (2007)](https://doi.org/10.1016/j.tree.2006.09.010://doi.org/10.1002/ece3.1418)
 [Qiao et al. (2015)](https://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12397)
 
 ---
@@ -2068,8 +2070,8 @@ background-position: 60% 60%
 - Média
 - Média ponderada (AUC ou TSS)
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
-[Fletcher & Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+[Fletcher &amp; Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
 
 ---
 
@@ -2117,7 +2119,7 @@ background-position: 50% 90%
 
 ### 2. Cálculo da **média ponderada** pelos valores de AUC ou TSS para cada pixel
 
-$$consenso = \frac{\sum_{i=1}^{N}(w_i . pixel_i)}{\sum_{i=1}^N(w_i)}$$
+`$$consenso = \frac{\sum_{i=1}^{N}(w_i . pixel_i)}{\sum_{i=1}^N(w_i)}$$`
 
 ---
 
@@ -2133,7 +2135,7 @@ background-position: 7% 70%, 93% 70%
 
 ### 2. Cálculo do **desvio padrão** ou **partição da variância** para cada pixel
 
-<br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Diniz-Filho et al. (2009)](https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2009.06196.x)
 
 ---
@@ -2162,7 +2164,7 @@ background-position: 5% 25%, 40% 90%, 85% 25%, 85% 90%, 98% 45%, 98% 90%, 5% 75%
 
 ## Impacto da mineração sobre anuros e aves na Serra do Espinhaço
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Pena et al. (2017)](https://doi.org/10.1016/j.pecon.2017.07.005),  
 Fotos: [Ana Sofia](https://www.flickr.com/photos/anasofiabg/16016780506), [Fabiano Zig](http://www.clubedecicloturismo.com.br/viagens-1/504-expedicaoespinhaco)
 
@@ -2176,7 +2178,7 @@ background-position: 5% 20%, 5% 75%, 56% 90%, 93% 80%, 51% 15%
 
 ## Eficiência das áreas protegidas da Amazônia e Mata Atlântica
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Sobral-Souza et al. (2018)](https://doi.org/10.1016/j.actao.2018.01.001), [Foto: WWF Brasil](https://www.wwf.org.br/natureza_brasileira/areas_prioritarias/mata_atlantica/)
 
 ---
@@ -2189,7 +2191,7 @@ background-position: 5% 20%, 5% 75%, 35% 85%, 85% 90%, 85% 20%
 
 ## Áreas de transmissão de Chagas (*Trypanosoma cruzi*) no Paraná
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Ferro-e-Silva et al. (2018)](https://doi.org/10.1371/journal.pntd.0006907)
 
 ---
@@ -2202,7 +2204,7 @@ background-position: 5% 20%, 5% 63%, 50% 90%, 95% 70%, 55% 20%
 
 ## Expansão da cana sobre o tamanduá em São Paulo
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Bertassoni et al. (2019)](https://doi.org/10.1093/jmammal/gyz042)  
 [Foto: tamanduá](https://g1.globo.com/economia/agronegocios/globo-rural/noticia/2019/12/08/tamandua-bandeira-sofre-com-risco-de-extincao-e-ve-um-terco-da-sua-populacao-desaparecer-em-25-anos.ghtml)
 
@@ -2216,7 +2218,7 @@ background-position: 5% 20%, 5% 80%, 24% 90%, 90% 70%
 
 ## Zonas de hibridização potencial de saguis no Brasil
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Moraes et al. (2019)](https://doi.org/10.1016/j.gecco.2019.e00706)
 
 ---
@@ -2229,7 +2231,7 @@ background-position: 5% 20%, 5% 75%, 25% 75%, 45% 75%, 95% 70%, 45% 20%
 
 ## Clima, paisagem e riqueza de borboletas na Mata Atlântica
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Santos et al. (2020)](https://doi.org/10.1111/ddi.13007)
 
 ---
@@ -2242,7 +2244,7 @@ background-position: 5% 20%, 5% 75%, 90% 70%, 40% 20%
 
 ## Sobreposição de palmeira nativa e invasora na Mata Atlântica
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Bello et al. (2021)](https://doi.org/10.1007/s10530-020-02400-8)
 
 ---
@@ -2255,7 +2257,7 @@ background-position: 5% 20%, 5% 75%, 80% 70%
 
 ## Distribuição de macroalgas epífitas e hospedeiras em Cuba
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Jover et al. (2021)](https://doi.org/10.1016/j.aquabot.2021.103395)
 
 ---
@@ -2268,9 +2270,9 @@ background-position: 5% 20%, 5% 75%, 53% 70%, 95% 89%, 93% 30%
 
 ## Mudanças climáticas e migração de sabiás na América do Sul
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Stefanini et al. (2021)](https://doi.org/10.1093/ornithapp/duab006)  
-[Foto: Wikiaves](https://www.wikiaves.com.br/2185728&t=s&s=11522&tag=FOTOFEMEA)
+[Foto: Wikiaves](https://www.wikiaves.com.br/2185728&amp;t=s&amp;s=11522&amp;tag=FOTOFEMEA)
 
 ---
 
@@ -2282,7 +2284,7 @@ background-position: 5% 20%, 5% 75%, 80% 20%, 95% 70%, 50% 60%
 
 ## Regiões prioritárias para conservação das queixadas no Brasil
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Oshima et al. (2021)](https://doi.org/10.1016/j.gecco.2021.e01796)
 
 ---
@@ -2295,7 +2297,7 @@ background-position: 5% 20%, 5% 75%, 51% 40%, 92% 70%, 51% 90%, 43% 15%, 59% 15%
 
 ## Áreas de sobreposição de cervídeo nativo e do javaporco na Argentina
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 [Bercê et al. (2021)](https://doi.org/10.1093/jmammal/gyab099)
 
 ---
@@ -2304,7 +2306,7 @@ background-position: 5% 20%, 5% 75%, 51% 40%, 92% 70%, 51% 90%, 43% 15%, 59% 15%
 
 ### Português
 
-- [De Marco, P., & Siquera, M. F. (2009). Como determinar a distribuição potencial de espécies sob uma abordagem conservacionista? 5, 12.](https://www.conservation.org/docs/default-source/brasil/Megadiversidade_desafios_cientificos.pdf)
+- [De Marco, P., &amp; Siquera, M. F. (2009). Como determinar a distribuição potencial de espécies sob uma abordagem conservacionista? 5, 12.](https://www.conservation.org/docs/default-source/brasil/Megadiversidade_desafios_cientificos.pdf)
 
 - [Giannini, T. C. et al. (2012). Desafios atuais da modelagem preditiva de distribuição de espécies. Rodriguésia, 63(3), 733–749.](https://doi.org/10.1590/S2175-78602012000300017)
 
@@ -2312,11 +2314,11 @@ background-position: 5% 20%, 5% 75%, 51% 40%, 92% 70%, 51% 90%, 43% 15%, 59% 15%
 
 - [Araújo, M. B. et al. (2019). Standards for distribution models in biodiversity assessments. Science Advances, 5(1), eaat4858.](https://doi.org/10.1126/sciadv.aat4858)
 
-- [Feng, X. et al. (2019). A checklist for maximizing reproducibility of ecological niche models. Nature Ecology & Evolution, 3(10), 1382–1395.](https://doi.org/10.1038/s41559-019-0972-5)
+- [Feng, X. et al. (2019). A checklist for maximizing reproducibility of ecological niche models. Nature Ecology &amp; Evolution, 3(10), 1382–1395.](https://doi.org/10.1038/s41559-019-0972-5)
 
 - [Zurell, D. et al. (2020). A standard protocol for reporting species distribution models. Ecography, 43(9), 1261–1277.](https://doi.org/10.1111/ecog.04960)
 
-- [Sillero, N., & Barbosa, A. M. (2021). Common mistakes in ecological niche models. International Journal of Geographical Information Science, 35(2), 213–226.](https://doi.org/10.1080/13658816.2020.1798968)
+- [Sillero, N., &amp; Barbosa, A. M. (2021). Common mistakes in ecological niche models. International Journal of Geographical Information Science, 35(2), 213–226.](https://doi.org/10.1080/13658816.2020.1798968)
 
 - [Sillero, N. et al. (2021). Want to model a species niche? A step-by-step guideline on correlative ecological niche modelling. Ecological Modelling, 456, 109671.](https://doi.org/10.1016/j.ecolmodel.2021.109671)
 
@@ -2326,21 +2328,21 @@ background-position: 5% 20%, 5% 75%, 51% 40%, 92% 70%, 51% 90%, 43% 15%, 59% 15%
 
 ### Português
 
-- [Lima-Ribeiro, M., & Diniz-Filho, J. (2013). Modelos ecológicos ea extinção da megafauna: Clima e homem na América do Sul.](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
+- [Lima-Ribeiro, M., &amp; Diniz-Filho, J. (2013). Modelos ecológicos ea extinção da megafauna: Clima e homem na América do Sul.](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
 
 ### Inglês
 
-- [Franklin, J., & Miller, J. A. (2009). Mapping species distributions: Spatial inference and prediction. Cambridge University Press.](https://doi.org/10.1017/CBO9780511810602)
+- [Franklin, J., &amp; Miller, J. A. (2009). Mapping species distributions: Spatial inference and prediction. Cambridge University Press.](https://doi.org/10.1017/CBO9780511810602)
 
 - [Peterson, A. T. (Org.). (2011). Ecological niches and geographic distributions. Princeton University Press.](https://press.princeton.edu/books/paperback/9780691136882/ecological-niches-and-geographic-distributions-mpb-49)
 
 - [Peterson, A. T. (2014). Mapping disease transmission risk: Enriching models using biogeography and ecology. Johns Hopkins University Press.](https://jhupbooks.press.jhu.edu/title/mapping-disease-transmission-risk)
 
-- [Wegmann, M., Leutner, B., & Dech, S. (Orgs.). (2016). Remote sensing and GIS for ecologists: Using open source software. Pelagic Publishing.](http://book.ecosens.org/RSEbook/)
+- [Wegmann, M., Leutner, B., &amp; Dech, S. (Orgs.). (2016). Remote sensing and GIS for ecologists: Using open source software. Pelagic Publishing.](http://book.ecosens.org/RSEbook/)
 
-- [Guisan, A., Thuiller, W., & Zimmermann, N. E. (2017). Habitat Suitability and Distribution Models: With Applications in R. Cambridge University Press.](https://doi.org/10.1017/9781139028271)
+- [Guisan, A., Thuiller, W., &amp; Zimmermann, N. E. (2017). Habitat Suitability and Distribution Models: With Applications in R. Cambridge University Press.](https://doi.org/10.1017/9781139028271)
 
-- [Fletcher, R., & Fortin, M.-J. (2018). Spatial Ecology and Conservation Modeling: Applications with R. Springer International Publishing.](https://doi.org/10.1007/978-3-030-01989-1)
+- [Fletcher, R., &amp; Fortin, M.-J. (2018). Spatial Ecology and Conservation Modeling: Applications with R. Springer International Publishing.](https://doi.org/10.1007/978-3-030-01989-1)
 
 ---
 
@@ -2357,15 +2359,124 @@ background-position: 35% 50%, 90% 55%, 5% 86%
 
 ## Maurício Vancine
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 Contatos:
 
-`r icons::icon_style(icons::fontawesome(name = "envelope", style = "solid"), fill = "#23373b")` [mauricio.vancine@gmail.com]()  
-`r icons::icon_style(icons::fontawesome("twitter"), fill = "#23373b")` [@mauriciovancine](https://twitter.com/mauriciovancine)  
-`r icons::icon_style(icons::fontawesome(name = "github"), fill = "#23373b")` [mauriciovancine](https://github.com/mauriciovancine)
-`r icons::icon_style(icons::fontawesome(name = "link", style = "solid"), fill = "#23373b")` [mauriciovancine.github.io](https://mauriciovancine.github.io)
+&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#23373b;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"&gt;&lt;/path&gt;&lt;/svg&gt; [mauricio.vancine@gmail.com]()  
+&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#23373b;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; [@mauriciovancine](https://twitter.com/mauriciovancine)  
+&lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#23373b;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; [mauriciovancine](https://github.com/mauriciovancine)
+&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#23373b;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; [mauriciovancine.github.io](https://mauriciovancine.github.io)
 
-<br><br><br><br><br>
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 
 Slides criados via pacote [xaringan](https://github.com/yihui/xaringan) e tema [Metropolis](https://github.com/pat-s/xaringan-metropolis). Animação dos sapos por [@probzz](https://twitter.com/probzz/status/1367613720294170627).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "rainbow",
+"highlightLines": false,
+"highlightSpans": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%/%total%",
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
