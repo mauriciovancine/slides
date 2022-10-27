@@ -1,0 +1,771 @@
+---
+title: "Modelagem de Distribuição de Espécies e algumas aplicações"
+author: "<br> [Maurício Vancine](https://mauriciovancine.github.io/) • [LEEC/Unesp](https://leec.eco.br/)"
+date: "Novembro de 2022 <br><br><br> Licença: [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR)"
+format: 
+  revealjs:
+    theme: [custom.scss]
+    slide-number: c/t
+    show-slide-number: all
+    hash-type: number
+    preview-links: false
+    chalkboard: true
+    execute:
+      echo: true
+      eval: true
+      warning: false
+      message: false
+---
+
+## Tópicos
+
+1. Apresentações
+1. Visão geral
+1. Conceitualização
+1. Preparação dos dados
+1. Ajuste dos modelos
+1. Avaliação dos modelos
+1. Predição e consenso dos modelos
+1. Aplicações
+
+## Maurício Vancine 
+
+::: columns
+::: {.column width="40%"}
+<center>
+<br>
+![](img/avatar.png)
+[`r icons::icon_style(icons::fontawesome("link"), fill = "#2268bc")`](https://mauriciovancine.github.io/)
+[`r icons::icon_style(icons::fontawesome("envelope", style = "solid"), fill = "#2268bc")`](mailto:mauricio.vancine@gmail.com)
+[`r icons::icon_style(icons::academicons("cv"), fill = "#2268bc")`](https://mauriciovancine.github.io/cv/cv-mauricio-vancine-pt-academic-complete.html)
+[`r icons::icon_style(icons::fontawesome("twitter"), fill = "#2268bc")`](https://twitter.com/mauriciovancine)
+[`r icons::icon_style(icons::fontawesome("github"), fill = "#2268bc")`](https://github.com/mauriciovancine)
+[`r icons::icon_style(icons::academicons("orcid"), fill = "#2268bc")`](https://orcid.org/0000-0001-9650-7575)
+[`r icons::icon_style(icons::academicons("lattes"), fill = "#2268bc")`](http://lattes.cnpq.br/9761288418931193)
+</center>
+:::
+
+::: {.column width="60%"}
+
+- Ecólogo (2014)
+
+- Doutorando em Ecologia (2020-?)
+
+- Ecologia Espacial
+
+- Modelagem Ecológica
+
+- Análise de Dados Ecológicos e Geoespaciais
+
+- Ecologia e Conservação de Anfíbios
+
+- *Open source* [R, QGIS, GRASS GIS, GNU/Linux, ...]
+
+:::
+:::
+
+## Visão geral
+
+<center>
+<img src="img/sdm_guisan_general.png" style="width:80%"/>
+</center>
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Visão geral
+
+**Protocolo padrão para modelos de distribuição de espécies**
+
+<center>
+<img src="img/sdm_zurell_standard_complete.jpg" style="width:80%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+## Visão geral
+
+**Protocolo padrão para modelos de distribuição de espécies**
+
+<center>
+<img src="img/sdm_zurell_standard.png" style="width:100%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+# 1. Conceitualização
+
+## Terminologia {.smaller}
+
+**1. Modelos de Distribuição de Espécies (*Species Distribution Models* - SDMs)**
+
+- Distribuição da espécie **sem transferir** para outras condições no espaço ou tempo
+- Distribuição com maior precisão incorporando elementos de dispersão e colonização 
+
+. . . 
+
+**2. Modelos de Nicho Ecológico (*Ecological Niche Models* - ENMs)**
+
+- Estima as preferências ambientais da espécie para **poder transferir** para outras condições no espaço ou tempo
+
+. . . 
+
+**3. Modelos de Adequabilidade de Habitat (*Habitat Suitability Models* - HSMs)**
+
+- Reflete melhor a base dos modelos: quantificar a **relação espécie-ambiente** (habitat)
+- Aplicável a entidades que **não sejam espécies** (e.g. genes ou comunidades)
+- Aplicável a casos em que um **nicho é parcialmente capturado** (área menor que a distribuição total)
+
+:::footer
+[Araújo & Peterson (2012)](https://doi.org/10.1890/11-1930.1), 
+[Peterson & Soberon (2012)](https://doi.org/10.4322/natcon.2012.019), 
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r), 
+[Adaptado de Luara Tourinho (2021)](https://youtu.be/l62rqAlV3aE)
+:::
+
+# Em comum: todos são **modelos**. Mas o que são modelos?
+
+## Modelos [científicos]
+
+Idealizações da realidade e não a própria realidade
+
+<center>
+<img src="img/general_models.png" style="width:80%"/>
+</center>
+
+(...) essentially, all models are wrong, but some are useful. George E. P. Box (1919-2013)
+
+:::footer
+[Silva & Catelli (2019)](http://dx.doi.org/10.1590/1806-9126-RBEF-2019-0029)
+:::
+
+## Objetivo
+
+Predizer a distribuição de espécies (ou entidades) a partir do nicho ecológico
+
+<br>
+<center>
+<img src="img/sdm_niche_distribution_soberon_etal_2017.jpg" style="width:80%"/>
+</center>
+
+:::footer
+[Soberón et al. (2017)](http://dx.doi.org/10.1016/j.rmb.2017.03.011)
+:::
+
+## Entretanto...
+
+Estimar/analisar o **nicho das espécies** sem inferir sua distribuição geográfica
+
+- Sobreposição de nicho
+- Amplitude do nicho
+- Montagem de comunidades
+- Respostas ambientais
+- Diversidade funcional
+- ...
+
+![](img/sdm_niche_variation.png){.absolute width=550 height=400 right=-50 top=200}
+
+:::footer
+[Site pessoal do Raul Costa-Pereira](https://rcosta-pereira.weebly.com/)
+:::
+
+## Entretanto...
+
+Inferir a **distribuição das espécies** sem estimar o nicho ecológico
+
+- Buffers
+- Densidade de Kernel
+- Mínimo Polígono Convexo (MPC)
+- Interpolações (IDW, Spline, Krigagem)
+- Opinião de especialistas (IUCN)
+- ...
+
+![](img/sdm_mpc_interpolacao.png){.absolute width=450 height=450 right=-100 top=200}
+
+:::footer
+[Bahn & McGill (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00331.x),
+[Jenkins et al. (2013)](https://doi.org/10.1073/pnas.1302251110),
+[BiodiversityMapping.org](https://biodiversitymapping.org/),
+[IUCN (2021)](https://www.iucnredlist.org/),
+[Warren (2012)](https://linkinghub.elsevier.com/retrieve/pii/S0169534712000754)
+:::
+
+## Nicho ecológico
+
+1. Modelagem de nicho ecológico
+1. Coexistência entre espécies
+1. Metacomunidades
+
+<center>
+<img src="img/sdm_nicho_salles_01.jpg" style="width:100%"/>
+</center>
+
+:::footer
+[McInerny & Etienne (2012)](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.12033),
+[Sales et al. (2021)](https://doi.org/10.1016/j.actao.2020.103701)
+:::
+
+## Modelagem de nicho ecológico
+
+Combinações de requisitos que permitem a uma população sobreviver e crescer (r > 0) em um determinado lugar
+
+![](img/sdm_r.png){.absolute width=400 height=400 right=600 top=240}
+![](img/sdm_verhulst_grafico.png){.absolute width=500 height=400 right=50 top=250}
+
+:::footer
+[Chase & Leibold (2003)](https://press.uchicago.edu/ucp/books/book/chicago/E/bo3638660.html), 
+[Holt (2009)](https://www.pnas.org/content/106/Supplement_2/19659),
+[Soberón (2010)](https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2009.06074.x),
+[Ovaskainen et al. (2016)](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780198714866.001.0001/acprof-9780198714866),
+[Gravel et al. (2019)](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecog.04006),
+[Murray & Sandercock (2019)](https://www.wiley.com/en-am/Population+Ecology+in+Practice-p-9780470674147)
+:::
+
+## Modelagem de nicho ecológico {.smaller}
+
+- Podemos associar a taxa de crescimento intrínseca (r) com as condições ambientais 
+- O modelo então estima as condições ambientais favoráveis (nicho ecológico) e prediz a distribuição da espécie
+
+![](img/sdm_nicho_r_ambiental.png){.absolute width=400 height=400 right=600 top=250}
+![](img/sdm_nicho_r_geografico.png){.absolute width=500 height=400 right=50 top=250}
+
+:::footer
+[Hirzel & Le Lay (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2008.01524.x),
+[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+:::
+
+## Espaço geográfico (G)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao01.png" style="width:70%"/>
+</center>
+
+:::footer
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Distribuição de espécies
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao02.png" style="width:70%"/>
+</center>
+
+:::footer
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Condições abióticas (A)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao03.png" style="width:70%"/>
+</center>
+
+:::footer
+[Grinnell (1917)](https://www.jstor.org/stable/info/10.2307/4072271),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Condições bióticas (B)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao04.png" style="width:70%"/>
+</center>
+
+:::footer
+[Elton (1927)](http://www.biodiversitylibrary.org/bibliography/7435),
+[MacArthur & Levins (1967)](https://www.journals.uchicago.edu/doi/abs/10.1086/282505),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Condições abióticas (A) e bióticas (B)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao05.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Nicho fundamental
+
+Todas as condições ambientais favoráveis
+
+<center>
+<img src="img/sdm_nicho_distribuicao06.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Nicho realizado
+
+Condições ambientais favoráveis limitadas pela interação
+
+<center>
+<img src="img/sdm_nicho_distribuicao07.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Nicho
+
+Hipervolume n-dimensional
+
+<center>
+<img src="img/sdm_nicho_distribuicao08.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Dualidade Hutchinsoniana
+
+Inferir a distribuição geográfica de uma espécie a partir do nicho ecológico
+
+<center>
+<img src="img/sdm_niche_distribution_soberon_nakamura_2009.jpg" style="width:43%"/>
+</center>
+
+:::footer
+[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Soberón et al. (2017)](http://dx.doi.org/10.1016/j.rmb.2017.03.011)
+:::
+
+## Ocorrências no espaço geográfico
+
+<center>
+<img src="img/sdm_dualidade01.png" style="width:100%"/>
+</center>
+
+:::footer
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+:::
+
+## Condições ambientais
+
+<center>
+<img src="img/sdm_dualidade02.png" style="width:100%"/>
+</center>
+
+:::footer
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+:::
+
+## Estimativa do nicho realizado
+
+<center>
+<img src="img/sdm_dualidade03.png" style="width:100%"/>
+</center>
+
+:::footer
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+:::
+
+## Predição geográfica
+
+<center>
+<img src="img/sdm_dualidade04.png" style="width:100%"/>
+</center>
+
+:::footer
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106)
+:::
+
+# Como contornar essa extrapolação?
+
+## Área acessível (movimento) (M)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao09.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
+:::
+
+## Área acessível (movimento) (M)
+
+O limite deve considerar as condições de dispersão históricas das espécies
+
+![](img/sdm_limite01.png){.absolute width=550 height=400 right=500 top=250}
+![](img/sdm_limite03.png){.absolute width=400 height=400 right=30 top=250}
+
+:::footer
+[Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780),
+[Owens et al. (2013)](https://www.sciencedirect.com/science/article/pii/S0304380013002159),
+[Machado-Stredel et al. (2021)](https://escholarship.org/uc/item/8hq04438)
+:::
+
+## Populações fonte e ralo (*source-sink*)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao10.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
+:::
+
+## Populações fonte e ralo (*source-sink*)
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao11.png" style="width:70%"/>
+</center>
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
+:::
+
+## Populações fonte e ralo (*source-sink*) {.smaller}
+
+::: columns
+::: {.column width="30%"}
+**Invasão**
+
+- Competição
+- Predação
+- Parasitismo
+- Amensalismo
+
+**Distribuição histórica**
+
+- Mutualismo
+- Cooperação
+- Comensalismo
+- Inquilinismo
+- Epifitismo
+:::
+
+::: {.column width="70%"}
+<br><br>
+<center>
+<img src="img/sdm_nicho_distribuicao11.png" style="width:100%"/>
+</center>
+:::
+:::
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
+:::
+
+## Populações fonte e ralo (*source-sink*) {.smaller}
+
+::: columns
+::: {.column width="30%"}
+
+**Inibição**
+
+- Competição
+- Predação
+- Parasitismo
+- Amensalismo
+
+**Facilitação**
+
+- Mutualismo
+- Cooperação
+- Comensalismo
+- Inquilinismo
+- Epifitismo
+:::
+
+::: {.column width="70%"}
+<br><br>
+<center>
+<img src="img/sdm_nicho_distribuicao11.png" style="width:100%"/>
+</center>
+:::
+:::
+
+:::footer
+[Hutchinson (1957)](http://symposium.cshlp.org/cgi/doi/10.1101/SQB.1957.022.01.039),
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html),
+[Barve et al. (2011)](https://linkinghub.elsevier.com/retrieve/pii/S0304380011000780)
+:::
+
+## Estabilidade
+
+Variações das condições abióticas e bióticas em função do tempo e do espaço
+
+<center>
+<img src="img/sdm_bam_mudanca.png" style="width:50%"/>
+</center>
+
+:::footer
+[Lima-Ribeiro & Diniz-Filho (2013)](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
+:::
+
+## O que de fato modelamos?
+
+<br>
+<center>
+<img src="img/sdm_nicho_distribuicao12.png" style="width:70%"/>
+</center>
+
+:::footer
+[Soberón & Peterson (2005)](https://doi.org/10.1016/j.actao.2020.103701),
+[Soberón (2007)](https://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2007.01107.x),
+[Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
+:::
+
+## Ruído Eltoniano
+
+Desconsideramos as condições bióticas 
+
+<br>
+<center>
+<img src="img/sdm_biotico02.jpg" style="width:90%"/>
+</center>
+
+:::footer
+[Colwell & Rangel (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901650106),
+[Soberón & Nakamura (2009)](http://www.pnas.org/cgi/doi/10.1073/pnas.0901637106),
+[Wisz et al. (2013)](https://doi.org/10.1111/j.1469-185X.2012.00235.x)
+[Dormann et al. (2018)](https://onlinelibrary.wiley.com/doi/10.1111/geb.12759)
+:::
+
+## Entretanto...
+
+Esquilo: *Sciurus aestuans* (catinguelê)  
+Palmeira: *Syagrus romanzoffiana* (jerivá)
+
+<center>
+<img src="img/sdm_recurso.png" style="width:80%"/>
+</center>
+
+:::footer
+[Preuss & Padial (2021)](https://doi.org/10.3897/neotropical.16.e64892)
+:::
+
+## Pressupostos {.smaller}
+
+<br>
+
+- **Estabilidade do nicho ecológico**: as espécies mantêm o mesmo nicho ecológico ao
+longo do tempo, ou, pelo menos, entre os períodos utilizados na modelagem
+
+. . . 
+
+- **Equilíbio espécie-clima**: distribuição de uma espécie é considerada em equilíbrio com o clima
+quando ela está presente em todas as áreas climaticamente adequadas à sua
+ocorrência e não ocorre nas regiões inadequadas
+
+. . . 
+
+- **Controle taxonômico**: certeza em relação à taxonomia da espécie para as ocorrências (discutível)
+
+. . . 
+
+- **"Ruído Eltoniano"**: as interações bióticas não afetam a distribuição da espécie na macroescala
+
+## Temas {.smaller}
+
+::: columns
+::: {.column width="50%"}
+1. Distribuição de espécies
+1. Padrões de diversidade
+1. Mudanças climáticas (passado e futuro)
+1. Invasão biológicas
+1. Transmissão de doenças
+1. Interações entre espécies
+1. Processos de extinção
+1. Conservação-evolução de nicho
+1. Estabelecer refúgios climáticos
+1. Estabelecimento e eficiência de áreas protegidas
+:::
+
+::: {.column width="50%"}
+<center>
+<img src="img/sdm_america_sul_grupos.png" style="width:100%"/>
+</center>
+<center>
+<img src="img/sdm_america_sul_temas.png" style="width:100%"/>
+</center>
+:::
+:::
+
+:::footer
+[Urbina-Cardona et al. (2019)](http://journals.sagepub.com/doi/10.1177/1940082919854058)
+:::
+
+## Visão geral
+
+<center>
+<img src="img/sdm_guisan_general.png" style="width:80%"/>
+</center>
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Visão geral
+
+**Protocolo padrão para modelos de distribuição de espécies**
+
+<center>
+<img src="img/sdm_zurell_standard.png" style="width:100%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+# 2. Preparação dos dados
+
+## Dados de entrada
+
+<br>
+<center>
+<img src="img/sdm_dados.png" style="width:70%"/>
+</center>
+
+## Ocorrências
+
+**Formato**
+
+<center>
+<img src="img/sdm_ocorrencias_formato.png" style="width:75%"/>
+</center>
+
+## Ocorrências {.smaller}
+
+**Fontes**
+
+::: columns
+::: {.column width="60%"}
+- Coletas em campo (amostragens em campo)
+- Literatura (artigos, data papers, ...)
+- Ciência cidadã (e-Bird, iNaturalist, ...)
+- Coleções científicas e museus (Museu Nacional, ...)
+- Banco de dados (GBIF, SpeciesLink, ...)
+- ...
+:::
+
+::: {.column width="40%"}
+<center>
+<img src="img/sdm_occ_fogomuseu.webp" style="width:90%"/>
+</center>
+<center>
+<img src="img/incendio_ib.jpg" style="width:90%"/>
+</center>
+:::
+:::
+
+:::footer
+[Incêndio no Museu Nacional (RJ) 02/09/2018](https://g1.globo.com/pop-arte/noticia/2018/09/03/principais-museus-do-mundo-utilizam-patrocinio-privado-para-manter-estrutura-e-expandir-acervo-veja-lista.ghtml),
+[Incêndio na Unesp em Rio Claro (SP) 31/08/2022 ](https://www1.folha.uol.com.br/cotidiano/2022/09/incendio-na-unesp-em-rio-claro-sp-destruiu-amostra-de-sapo-ameacado-de-extincao.shtml)
+:::
+
+## Ocorrências {.smaller}
+
+**Bancos de dados**
+
+- [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/)
+- [iNaturalist](https://www.inaturalist.org/)
+- [VertNet](http://vertnet.org/)
+- [eBird](https://ebird.org/home)
+- [iDigBio](https://www.idigbio.org/)
+- [Ocean Biogeographic Information System (OBIS)](https://obis.org/)
+- [Botanical Information and Ecology Network (BIEN)](https://bien.nceas.ucsb.edu/bien/)
+- [speciesLink](https://specieslink.net/)
+
+:::footer
+[Maitner et al. (2017)](https://doi.org/10.1111/2041-210X.12861)
+:::
+
+## Muito obrigado!
+
+::: columns
+::: {.column width="50%"}
+Agradecimentos:
+
+- Orientador: Miltinho
+- Flavia Pinto
+- Thadeu Sobral-Souza
+- Matheus Lima-Ribeiro
+- João Giovanelli
+
+- [Fapesp #2022/01899-6](https://bv.fapesp.br/pt/bolsas/203713/estrutura-da-paisagem-como-preditor-da-diversidade-taxonomica-e-funcional-de-anfibios-na-mata-atlant/)
+
+<center>
+<img src="img/fapesp.png" style="width:60%"/>
+</center>
+
+:::
+
+::: {.column width="50%"}
+Contato:
+
+<center>
+[`r icons::icon_style(icons::fontawesome("link"), fill = "#2268bc")`](https://mauriciovancine.github.io/)
+[`r icons::icon_style(icons::fontawesome("envelope", style = "solid"), fill = "#2268bc")`](mailto:mauricio.vancine@gmail.com)
+[`r icons::icon_style(icons::fontawesome("twitter"), fill = "#2268bc")`](https://twitter.com/mauriciovancine)
+[`r icons::icon_style(icons::fontawesome("github"), fill = "#2268bc")`](https://github.com/mauriciovancine)
+
+<img src="img/gif_frogs.gif" style="width:80%"/>
+</center>
+
+:::
+:::
+
+:::footer
+Slides por [Maurício Vancine](https://mauriciovancine.github.io/), feitos com [Quarto](https://quarto.org/). Código disponível no [GitHub](https://github.com/mauriciovancine/workshop-intro-r/blob/master/01_slides/slides.qmd).
+:::
