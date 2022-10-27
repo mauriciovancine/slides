@@ -474,18 +474,18 @@ O limite deve considerar as condições de dispersão históricas das espécies
 ::: {.column width="30%"}
 **Invasão**
 
-- Competição
-- Predação
-- Parasitismo
-- Amensalismo
+- Espécies exóticas
+- Ecossistemas
+- Extinção
+- Hibridização
 
 **Distribuição histórica**
 
-- Mutualismo
-- Cooperação
-- Comensalismo
-- Inquilinismo
-- Epifitismo
+- Paleoclima
+- Refúfios
+- Conexões
+- Dispersão
+- Vicariância
 :::
 
 ::: {.column width="70%"}
@@ -696,22 +696,26 @@ ocorrência e não ocorre nas regiões inadequadas
 - Ciência cidadã (e-Bird, iNaturalist, ...)
 - Coleções científicas e museus (Museu Nacional, ...)
 - Banco de dados (GBIF, SpeciesLink, ...)
-- ...
+
+<center>
+<img src="img/incendio_ib.jpg" style="width:60%"/>
+</center>
 :::
 
 ::: {.column width="40%"}
 <center>
-<img src="img/sdm_occ_fogomuseu.webp" style="width:90%"/>
+<img src="img/incendio_butantan.webp" style="width:90%"/>
 </center>
 <center>
-<img src="img/incendio_ib.jpg" style="width:90%"/>
+<img src="img/sdm_occ_fogomuseu.webp" style="width:90%"/>
 </center>
 :::
 :::
 
 :::footer
-[Incêndio no Museu Nacional (RJ) 02/09/2018](https://g1.globo.com/pop-arte/noticia/2018/09/03/principais-museus-do-mundo-utilizam-patrocinio-privado-para-manter-estrutura-e-expandir-acervo-veja-lista.ghtml),
-[Incêndio na Unesp em Rio Claro (SP) 31/08/2022 ](https://www1.folha.uol.com.br/cotidiano/2022/09/incendio-na-unesp-em-rio-claro-sp-destruiu-amostra-de-sapo-ameacado-de-extincao.shtml)
+[Incêndio no Butantan (RJ) [15/05/2010]](https://veja.abril.com.br/tecnologia/incendio-no-instituto-butantan-e-tragedia-cientifica/),
+[Incêndio no Museu Nacional (RJ) [02/09/2018]](https://g1.globo.com/pop-arte/noticia/2018/09/03/principais-museus-do-mundo-utilizam-patrocinio-privado-para-manter-estrutura-e-expandir-acervo-veja-lista.ghtml),
+[Incêndio na Unesp em Rio Claro (SP) [31/08/2022] ](https://www1.folha.uol.com.br/cotidiano/2022/09/incendio-na-unesp-em-rio-claro-sp-destruiu-amostra-de-sapo-ameacado-de-extincao.shtml)
 :::
 
 ## Ocorrências {.smaller}
@@ -727,8 +731,36 @@ ocorrência e não ocorre nas regiões inadequadas
 - [Botanical Information and Ecology Network (BIEN)](https://bien.nceas.ucsb.edu/bien/)
 - [speciesLink](https://specieslink.net/)
 
+![](img/sdm_occ_fontes.png){.absolute width=450 height=650 right=-50 top=50}
+
 :::footer
 [Maitner et al. (2017)](https://doi.org/10.1111/2041-210X.12861)
+:::
+
+## Ocorrências {.smaller}
+
+**Pacotes no R**
+
+- [spocc](https://docs.ropensci.org/spocc/)
+- [rgbif](https://docs.ropensci.org/rgbif/)
+- [rvertnet](https://docs.ropensci.org/rvertnet/)
+- [rebird](https://docs.ropensci.org/rebird/)
+- [auk](https://cornelllabofornithology.github.io/auk/)
+- [BIEN](https://bien.nceas.ucsb.edu/bien/tools/rbien/)
+- [taxize](https://docs.ropensci.org/taxize/)
+- [CoordinateCleaner](https://docs.ropensci.org/CoordinateCleaner/)
+- [sampbias](https://github.com/azizka/sampbias)
+- [spThin](https://github.com/mlammens/spThin)
+- [occCite](https://hannahlowens.github.io/occCite/)
+
+![](img/sdm_occ_pkg.png){.absolute width=500 height=550 right=-50 top=100}
+
+:::footer
+[Aiello-Lammens et al. (2015)](https://doi.org/10.1111/ecog.01132),
+[Maitner et al. (2017)](https://doi.org/10.1111/2041-210X.12861),
+[Zizka et al. (2019)](https://doi.org/10.1111/2041-210X.13152),
+[Zizka et al. (2020)](https://doi.org/10.1111/ecog.05102),
+[Owens et al. (2021)](https://doi.org/10.1111/ecog.05618)
 :::
 
 ## Muito obrigado!
