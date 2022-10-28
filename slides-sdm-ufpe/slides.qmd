@@ -763,6 +763,484 @@ ocorrência e não ocorre nas regiões inadequadas
 [Owens et al. (2021)](https://doi.org/10.1111/ecog.05618)
 :::
 
+## Ocorrências {.smaller}
+
+**Viés de amostragem - Brasil**
+
+- 1.144.629 (total) e 882.468 (válidos) ocorrências para 4345 espécies
+- Grupos: vertebrados , artropodes e angiospermas
+- Todos as ocorrências < 1km de rotas de acesso (estradas e rios)
+
+![](img/sdm_occ_vies_brasil01.jpg){.absolute width=400 height=400 right=-120 top=280}
+![](img/sdm_occ_vies_brasil02.jpg){.absolute width=750 height=400 right=300 top=280}
+
+:::footer
+[Oliveira et al. (2016)](https://doi.org/10.1111/ddi.12489)
+:::
+
+## Ocorrências {.smaller}
+
+**Viés de amostragem - Mundo**
+
+- 742 milhões de ocorrências de 374.900 espécies
+- Representando 6,74% do globo amostrado
+
+<center>
+<img src="img/sdm_occ_vies_mundo02.jpg" style="width:70%"/>
+</center>
+
+:::footer
+[Hughes et al. (2021)](https://doi.org/10.1111/ecog.05926)
+:::
+
+## Variáveis ambientais
+
+**Raster - contínuos ou categóricos**
+
+![](img/geo_raster.png){.absolute width=540 height=500 right=500 top=150}
+![](img/geo_raster_cont_cat.png){.absolute width=600 height=350 right=-150 top=200}
+
+:::footer
+[National Ecological Observatory Network (NEON)](https://www.neonscience.org/resources/learning-hub/tutorials/dc-raster-data-r),
+[Lovelace et al. (2020)](https://geocompr.robinlovelace.net/)
+:::
+
+## Variáveis ambientais {.smaller}
+
+**Bases de dados**
+
+- [WorldClim](https://www.worldclim.org/)
+- [CHELSA](https://chelsa-climate.org/)
+- [ENVIREM](https://envirem.github.io/)
+- [PaleoClim](http://www.paleoclim.org/)
+- [ecoClimate](https://www.ecoclimate.org/)
+- [EarthEnv](https://www.earthenv.org/)
+- [Land-Use Harmonization (LUH2)](https://luh.umd.edu/)
+- [Global Human Footprint](https://wcshumanfootprint.org/)
+- [SoilGrids](https://soilgrids.org/)
+- [MARSPEC](http://www.marspec.org)
+- [Bio-ORACLE](https://www.bio-oracle.org/)
+
+![](img/sdm_var_wc.png){.absolute width=600 height=100 right=-150 top=100}
+![](img/sdm_var_chelsa.gif){.absolute width=600 height=180 right=-150 top=240}
+![](img/sdm_var_soilgrids.png){.absolute width=600 height=200 right=-150 top=450}
+
+## Variáveis ambientais 
+
+**Interpolação**
+
+<center>
+<img src="img/var_interpolation.png" style="width:60%"/>
+</center>
+
+:::footer
+[Biodiversity and Climate Change Virtual Laboratory (BCCVL)](https://support.bccvl.org.au/support/home),
+[National Ecological Observatory Network (NEON)](https://www.neonscience.org/resources/learning-hub/tutorials/spatial-interpolation-basics),
+[Fick & Hijmans (2017)](https://onlinelibrary.wiley.com/doi/10.1002/joc.5086)
+:::
+
+## Variáveis ambientais {.smaller}
+
+::: columns
+::: {.column width="80%"}
+| Variável | Tipo         | Descrição                        |
+| -------- | ------------ | -------------------------------- |
+| BIO01    | Temperatura  | Temp. média anual                |
+| BIO02    | Temperatura  | Variação diurna média da temp.   |
+| BIO03    | Temperatura  | Isotermalidade                   |
+| BIO04    | Temperatura  | Sazonalidade da temp.            |
+| BIO05    | Temperatura  | Temp. máx. do mês mais quente    |
+| BIO06    | Temperatura  | Temp. mín. do mês mais frio      |
+| BIO07    | Temperatura  | Amplitude térmica anual          |
+| BIO08    | Temperatura  | Temp. média do trim. mais úmido  |
+| BIO09    | Temperatura  | Temp. média do trim. mais seco   |
+| BIO10    | Temperatura  | Temp. média do trim. mais quente |
+| BIO11    | Temperatura  | Temp. média do trim. mais frio   |
+:::
+
+::: {.column width="20%"}
+
+**Bioclimáticas**
+
+- Temp. = Temperatura
+- Prec. = Precipitação
+- trim. = Trimestre
+
+:::
+:::
+
+:::footer
+[O’Donnell & Ignizio (2012)](https://pubs.usgs.gov/ds/691/ds691.pdf)
+:::
+
+## Variáveis ambientais {.smaller}
+
+::: columns
+::: {.column width="80%"}
+| Variável | Tipo         | Descrição                   |
+| -------- | ------------ | --------------------------- |
+| BIO12    | Precipitação | Prec. anual                 |
+| BIO13    | Precipitação | Prec. do mês mais chuvoso   |
+| BIO14    | Precipitação | Prec. do mês mais seco      |
+| BIO15    | Precipitação | Sazonalidade da prec.       |
+| BIO16    | Precipitação | Prec. do trim. mais chuvoso |
+| BIO17    | Precipitação | Prec. do trim. mais seco    |
+| BIO18    | Precipitação | Prec. do trim. mais quente  |
+| BIO19    | Precipitação | Prec. do trim. mais frio    |
+:::
+
+::: {.column width="20%"}
+
+**Bioclimáticas**
+
+- Temp. = Temperatura
+- Prec. = Precipitação
+- trim. = Trimestre
+:::
+:::
+
+:::footer
+[O’Donnell & Ignizio (2012)](https://pubs.usgs.gov/ds/691/ds691.pdf)
+:::
+
+## Variáveis ambientais {.smaller}
+
+**Princípio da Parcimônia**
+
+- William of Ockham's (1285–1348)
+- "É fútil fazer com mais o que pode ser feito com menos"
+
+![](img/sdm_var_ockham_razor.jpg){.absolute width=300 height=400 right=50 top=240}
+![](img/sdm_var_parcimonia.jpg){.absolute width=450 height=400 right=500 top=250}
+
+:::footer
+[Coelho et al. (2018)](https://doi.org/10.1111/ecog.04228),
+[What does Occam’s razor mean? (2019)](https://englishtalkzone.com/what-does-occams-razor-mean/)
+:::
+
+## Variáveis ambientais {.smaller}
+
+**Colinearidade - Correlação**
+
+- Mede o grau de relação (positiva ou negativa) entre duas variáveis
+- r > |0.7|: indica alta correlação
+
+<center>
+<img src="img/sdm_var_correlacao01.webp" style="width:60%"/>
+<img src="img/sdm_var_correlacao02.webp" style="width:60%"/>
+</center>
+
+:::footer
+[Zuur et al. (2010)](https://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x),
+[Dormann et al. (2012)](https://doi.org/10.1111/j.1600-0587.2012.07348.x),
+[Naimi et al. (2014)](https://doi.org/10.1111/j.1600-0587.2013.00205.x),
+[Feng et al. 2019](http://www.nature.com/articles/s41559-019-0972-5),
+[Coeficientes de correlação](https://operdata.com.br/blog/coeficientes-de-correlacao/)
+:::
+
+## Variáveis ambientais {.smaller}
+
+**Colinearidade - Fator de Inflação de Variância (VIF)**
+
+- Medida da quantidade de multicolinearidade em um conjunto de múltiplas variáveis
+- VIF = 1: não há multicolinearidade entre as variáveis
+- VIF > 2 ou VIF > 5 ou VIF > 10: indica alta multicolinearidade (depende do autor)
+- Na figura: a) r = 0.8946 e VIF = 5.007 e b) r = 0.7697 e VIF = 2.453
+
+<center>
+<img src="img/sdm_var_vif.jpg" style="width:60%"/>
+</center>
+
+:::footer
+[Zuur et al. (2010)](https://onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2009.00001.x),
+[Dormann et al. (2012)](https://doi.org/10.1111/j.1600-0587.2012.07348.x),
+[Naimi et al. (2014)](https://doi.org/10.1111/j.1600-0587.2013.00205.x),
+[Feng et al. 2019](http://www.nature.com/articles/s41559-019-0972-5),
+[Coeficientes de correlação](https://operdata.com.br/blog/coeficientes-de-correlacao/)
+:::
+
+## Visão geral
+
+<center>
+<img src="img/sdm_guisan_general.png" style="width:80%"/>
+</center>
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Visão geral
+
+**Protocolo padrão para modelos de distribuição de espécies**
+
+<center>
+<img src="img/sdm_zurell_standard.png" style="width:100%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+# 3. Ajuste dos modelos
+
+## Métodos ou algoritmos
+
+![](img/sdm_geral_ajuste.png){.absolute width=650 height=500 right=450 top=150}
+
+:::footer
+[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+:::
+
+## Métodos ou algoritmos
+
+Métodos modelam diferentes áreas do Diagrama BAM
+
+![](img/sdm_geral_ajuste.png){.absolute width=650 height=500 right=450 top=150}
+![](img/sdm_metodos_bam.jpg){.absolute width=500 height=350 right=-100 top=200}
+
+:::footer
+[Sillero (2011)](https://doi.org/10.1016/j.ecolmodel.2011.01.018),
+[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
+:::
+
+## Métodos ou algoritmos
+
+Depende dos dados de presença e ausência da espécie
+
+<br>
+<center>
+<img src="img/sdm_tipos_metodos_ausencia.png" style="width:100%"/>
+</center>
+
+:::footer
+[Modificado com autorização de Esser (2021)](https://luizfesser.wordpress.com/2021/06/08/are-pseudoabsences-and-background-the-same-thing/)
+:::
+
+## Ausências em Ecologia {.smaller}
+
+- **Zeros falsos**: experiência do observador (a – b) ou desenho experimental (c – h)
+- **Zeros verdadeiros**: sistema ecológico estudado - *zeros estruturais* (i – k) ou variabilidade da amostragem - *zeros aleatórios* (l)
+
+<center>
+<img src="img/sdm_metodos_ausencia.jpg" style="width:60%"/>
+</center>
+
+:::footer
+[Blasco‐Moreno et al. (2019)](https://doi.org/10.1111/2041-210X.13185)
+:::
+
+## Métodos ou algoritmos
+
+Depende dos dados de presença e ausência da espécie
+
+<br>
+<center>
+<img src="img/sdm_tipos_metodos_pseudoausencia.png" style="width:100%"/>
+</center>
+
+:::footer
+[Modificado com autorização de Esser (2021)](https://luizfesser.wordpress.com/2021/06/08/are-pseudoabsences-and-background-the-same-thing/)
+:::
+
+## Somente presença
+
+**Bioclim (*Envelope score*)**
+
+Envelope climático com escores
+
+![](img/sdm_metodos_bioclim02.png){.absolute width=300 height=450 right=600 top=230}
+![](img/sdm_metodos_bioclim01.png){.absolute width=600 height=450 right=-100 top=200}
+
+:::footer
+[Nix (1986)](https://www.environment.gov.au/science/abrs/publications/flora-fauna/07),
+[Booth et al. (2014)](https://onlinelibrary.wiley.com/doi/10.1111/ddi.12144)
+:::
+
+## Somente presença
+
+**Domain (Distântica de Gower)**
+
+Distância ponto a ponto
+
+![](img/sdm_metodos_bioclim02.png){.absolute width=300 height=450 right=600 top=230}
+![](img/sdm_metodos_gower02.png){.absolute width=300 height=450 right=150 top=220}
+
+:::footer
+[Carpenter et al. (1993)](http://link.springer.com/10.1007/BF00051966)
+:::
+
+## Somente presença
+
+**Mahalanobis (Distância de Mahalanobis)**
+
+Envelope elíptico reflete melhor a tendência central da teoria do nicho
+
+![](img/sdm_metodos_mahalanobis01.png){.absolute width=370 height=370 right=600 top=300}
+![](img/sdm_metodos_mahalanobis02.png){.absolute width=380 height=380 right=150 top=300}
+
+:::footer
+[Farber & Kadmon (2003)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002003277),
+[Jiménez et al. (2019)](https://www.sciencedirect.com/science/article/pii/S0304380019300407)
+:::
+
+## Presença e pseudopresença {.smaller}
+
+**GLM (Modelos Lineares Generalizados - *Generalized Linear Models*)**
+
+- Distribuição de erros binomial
+
+<center>
+<img src="img/sdm_metodos_glm.png" style="width:60%"/>
+</center>
+
+:::footer
+[Guisan et al. (2002)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041)
+:::
+
+## Presença e pseudopresença {.smaller}
+
+**GAM (Modelos Generalizados Aditivos - *Generalized Additive Model*)**
+
+- Distribuição de erros binomial com funções de suavização 
+
+<center>
+<img src="img/sdm_metodos_gam.png" style="width:60%"/>
+</center>
+
+:::footer
+[Guisan et al. (2002)](https://linkinghub.elsevier.com/retrieve/pii/S0304380002002041)
+:::
+
+## Presença e pseudopresença {.smaller}
+
+**Random Forest**
+
+- Cria diversas árvores de decisão ('floresta') por reamostragem (*bootstrap*)
+- Combina os resultados de cada árvore em uma última classificação (categórico) ou regressão (contínuo)
+
+![](img/sdm_metodos_rf01.png){.absolute width=650 height=370 right=400 top=300}
+![](img/sdm_metodos_rf02.jpg){.absolute width=380 height=380 right=0 top=300}
+
+:::footer
+[Breiman (2001)](http://link.springer.com/10.1023/A:1010933404324),
+[Liaw & Wiener (2002)](https://cogns.northwestern.edu/cbmg/LiawAndWiener2002.pdf),
+[Prasad et al. (2006)](https://link.springer.com/article/10.1007%2Fs10021-005-0054-1),
+[Cutler et al. (2007)](https://doi.org/10.1890/07-0539.1),
+[Sheykhmousa et al. (2020)](https://doi.org/10.1109/JSTARS.2020.3026724),
+[BCCVL](https://support.bccvl.org.au/support/home)
+:::
+
+## Presença e pseudopresença {.smaller}
+
+**SVM (*Support Vector Machine*)**
+
+- Cria hiperplanos através de vetores de suporte
+- Faz a classificação (categórico) ou regressão (contínuo) para separar os dados em duas ou mais partes
+
+<center>
+<img src="img/sdm_metodos_svm.png" style="width:80%"/>
+</center>
+
+:::footer
+[Tax & Duin (2004)](https://link.springer.com/article/10.1023/B:MACH.0000008084.60811.49),
+[Guo et al. (2005)](https://doi.org/10.1016/j.ecolmodel.2004.07.012),
+[Drake et al. (2006)](https://doi.org/10.1111/j.1365-2664.2006.01141.x),
+[Dou et al. (2019)](https://doi.org/10.3390/rs11060638)
+:::
+
+
+background-image: url(img/sdm_metodos_maxent.png), url(img/sdm_metodos_maxent_features.png)
+background-size: 600px, 530px
+background-position: 5% 65%, 95% 65%
+
+## Presença e background {.smaller}
+
+**MaxEnt (Máxima Entropia)**
+
+- Compreender as características gerais de um sistema de informação parcial e incompleto
+- Aproxima o formato da distribuição dos valores do background aos valores das presenças, usando diferentes curvas (features) para achar os valores de adequabilidade
+
+![](img/sdm_metodos_maxent.png){.absolute width=650 height=370 right=400 top=300}
+![](img/sdm_metodos_maxent_features.png){.absolute width=550 height=380 right=-150 top=300}
+
+:::footer
+[Phillips et al. (2006)](https://linkinghub.elsevier.com/retrieve/pii/S030438000500267X),
+[Phillips & Dudík (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.0906-7590.2008.5203.x),
+[Elith et al. (2011)](https://onlinelibrary.wiley.com/doi/10.1111/j.1472-4642.2010.00725.x)
+[Phillips et al. (2017)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.03049),
+[BCCVL](https://support.bccvl.org.au/support/home),
+[SDM com RS NASA](https://appliedsciences.nasa.gov/join-mission/training/english/arset-species-distribution-modeling-remote-sensing)
+:::
+
+## Outros métodos ou algoritmos {.smaller}
+
+**Presença-pseudoausência**
+
+- Classification and regression trees (CART)
+- Multivariate adaptive regression spline (MARS)
+- Mixture discriminant analysis (MAD)
+- Artificial neural networks (ANN)
+- Boosted Regression Trees (BRT)
+- Bayesian Gaussian Process (GAU)
+
+**Presença-background**
+
+- Ecological Niche Factor Analysis (ENFA)
+- Genetic Algorithm for Rule-set Production (GARP)
+- Maxlike (MLK)
+
+![](img/sdm_metodos_outros.png){.absolute width=600 height=350 right=-150 top=200}
+
+:::footer
+[Fletcher & Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
+:::
+
+## Métodos ou algoritmos {.smaller}
+
+**Pacotes no R**
+
+- [dismo](https://cran.r-project.org/web/packages/dismo/)
+- [biomod2](https://cran.r-project.org/web/packages/biomod2/)
+- [sdm](https://cran.r-project.org/web/packages/sdm/)
+- [ENMTML](https://github.com/andrefaa/ENMTML)
+- [modelR](https://model-r.github.io/modleR/)
+- [ENMeval](https://cran.r-project.org/web/packages/ENMeval/)
+- [flexsdm](https://sjevelazco.github.io/flexsdm/index.html)
+- [SDMtune](https://cran.r-project.org/web/packages/SDMtune/)
+- [wallace](https://cran.r-project.org/web/packages/wallace/)
+- [ssdm](https://cran.r-project.org/web/packages/ssdm/)
+- [ShinyBIOMOD](https://gitlab.com/IanOndo/shinybiomod)
+
+![](img/sdm_algo.png){.absolute width=420 height=550 right=100 top=120}
+
+:::footer
+[Lista de pacotes no R](https://github.com/helixcn/sdm_r_packages)
+:::
+
+## Visão geral
+
+<center>
+<img src="img/sdm_guisan_general.png" style="width:80%"/>
+</center>
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Visão geral
+
+**Protocolo padrão para modelos de distribuição de espécies**
+
+<center>
+<img src="img/sdm_zurell_standard.png" style="width:100%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+# 4. Avaliação (do ajuste) dos modelos
+
 ## Muito obrigado!
 
 ::: columns
