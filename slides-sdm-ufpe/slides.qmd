@@ -64,6 +64,37 @@ format:
 :::
 :::
 
+## Análises Ecológicas no R 
+
+::: columns
+::: {.column width="40%"}
+<br>
+<center>
+<img src="img/aer.jpeg" href="https://analises-ecologicas.com/" style="width:90%"/>
+</center>
+:::
+
+::: {.column width="60%"}
+
+- 15 capítulos: linguagem R, `tidyverse`, perguntas em ecologia, análises univariadas, multivariadas e geoespaciais
+
+- [bookdown](https://analises-ecologicas.com/)
+
+- [PDF](https://canal6.com.br/livreacesso/livro/analises-ecologicas-no-r/)
+
+- [Amazon](https://www.amazon.com.br/An%C3%A1lises-ecol%C3%B3gicas-Ferdo-Rodrigues-Silva/dp/857917564X/ref=sr_1_1?keywords=9788579175640&qid=1654379366&sr=8-1)
+
+- [Código Fonte](https://github.com/paternogbc/livro_aer)
+
+- [YouTube](https://www.youtube.com/channel/UCLSVSCnmvf2k6OoWZCnEO4w)
+
+:::
+:::
+
+:::footer
+[Da Silva et al. (2022)](https://analises-ecologicas.com/)
+:::
+
 ## Visão geral
 
 <center>
@@ -763,6 +794,7 @@ ocorrência e não ocorre nas regiões inadequadas
 [Owens et al. (2021)](https://doi.org/10.1111/ecog.05618)
 :::
 
+<<<<<<< HEAD
 ## Ocorrências {.smaller}
 
 **Viés de amostragem - Brasil**
@@ -981,16 +1013,6 @@ ocorrência e não ocorre nas regiões inadequadas
 [Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
 :::
 
-# 3. Ajuste dos modelos
-
-## Métodos ou algoritmos
-
-![](img/sdm_geral_ajuste.png){.absolute width=650 height=500 right=450 top=150}
-
-:::footer
-[Brown & Yoder (2015)](https://doi.org/10.1002/ece3.1418)
-:::
-
 ## Métodos ou algoritmos
 
 Métodos modelam diferentes áreas do Diagrama BAM
@@ -1148,11 +1170,6 @@ Envelope elíptico reflete melhor a tendência central da teoria do nicho
 [Dou et al. (2019)](https://doi.org/10.3390/rs11060638)
 :::
 
-
-background-image: url(img/sdm_metodos_maxent.png), url(img/sdm_metodos_maxent_features.png)
-background-size: 600px, 530px
-background-position: 5% 65%, 95% 65%
-
 ## Presença e background {.smaller}
 
 **MaxEnt (Máxima Entropia)**
@@ -1193,6 +1210,35 @@ background-position: 5% 65%, 95% 65%
 
 :::footer
 [Fletcher & Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
+:::
+
+## Métodos ou algoritmos {.smaller}
+
+**Tunando hiperparâmetros (*Hyperparameter tuning*)**
+
+<center>
+<img src="img/tuning.png" style="width:60%"/>
+<img src="img/reg.webp" style="width:40%"/>
+</center>
+
+:::footer
+[Oracle Accelerated Data Science SDK (2022)](https://docs.oracle.com/en-us/iaas/tools/ads-sdk/latest/user_guide/automl/overview.html),
+[“Lasso & Ridge Regression” in 200 Words (2020)](https://thaddeus-segura.com/lasso-ridge/)
+:::
+
+## Métodos ou algoritmos {.smaller}
+
+**Tunando hiperparâmetros (*Hyperparameter tuning*)**
+
+- [ENMeval](https://cran.r-project.org/web/packages/ENMeval/)
+- [flexsdm](https://sjevelazco.github.io/flexsdm/index.html)
+- [SDMtune](https://cran.r-project.org/web/packages/SDMtune/)
+
+![](img/flexsdm.jpg){.absolute width=400 height=500 right=400 top=150}
+![](img/flexsdm_ex.jpg){.absolute width=400 height=500 right=-50 top=150}
+
+:::footer
+[Velazco et al. (2022)](https://doi.org/10.1111/2041-210X.13874)
 :::
 
 ## Métodos ou algoritmos {.smaller}
@@ -1241,6 +1287,454 @@ background-position: 5% 65%, 95% 65%
 
 # 4. Avaliação (do ajuste) dos modelos
 
+## Avaliação
+
+**Partição dos dados (treino e teste)**
+
+<center>
+<img src="img/sdm_avaliacao_particao.png" style="width:70%"/>
+</center>
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Avaliação
+
+O modelo consegue prever nossos dados?
+
+![](img/eval_pred01.png){.absolute width=550 height=450 right=500 top=200}
+![](img/eval_pred02.png){.absolute width=550 height=450 right=-100 top=200}
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Avaliação
+
+O modelo consegue prever nossos dados?
+
+![](img/eval01.png){.absolute width=500 height=500 right=450 top=150}
+![](img/eval02.png){.absolute width=400 height=350 right=0 top=230}
+
+:::footer
+[Peterson (2014)](https://jhupbooks.press.jhu.edu/title/mapping-disease-transmission-risk)
+:::
+
+## Avaliação {.smaller}
+
+**Métricas de avaliação**
+
+::: columns
+::: {.column width="50%"}
+- **Sensibilidade**: proporção de presenças verdadeiras [0:1]
+- **Especificidade**: proporção de ausências verdadeiras [0:1]
+- **AUC**: probabilidade de classificação correta [0:1]
+- **Kappa**: medida de concordância da classificação [-1:1]
+- **TSS**: compara o número de classificações corretas, menos aquelas atribuídas aleatoriamente [-1:1]
+:::
+
+::: {.column width="50%"}
+<center>
+<img src="img/sdm_avaliacao_metricas.png" style="width:100%"/>
+</center>
+:::
+:::
+
+:::footer
+[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article)
+:::
+
+## Avaliação
+
+**AUC (Área Abaixo da Curva - *Area Under the Curve*)**
+
+![](img/sdm_avaliacao_auc_tabela.png){.absolute width=500 height=300 right=550 top=250}
+![](img/sdm_avaliacao_auc_valores.png){.absolute width=500 height=500 right=0 top=150}
+
+:::footer
+[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article), [Araújo et al. (2005)](https://doi.org/10.1111/j.1365-2486.2005.01000.x), [Jiménez-Valverde (2012)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2011.00683.x). Mas ver [Lobo et al. (2008)](https://onlinelibrary.wiley.com/doi/10.1111/j.1466-8238.2007.00358.x)
+:::
+
+## Avaliação {.smaller}
+
+- **Kappa (K) [-1 a +1]**
+
+$K = \frac{\frac{a+d}{N}-\frac{(a+b)(a+c)+(c+d)(b+d)}{N^2}}{1-\frac{(a+b)(a+c)+(c+d)(d+b)}{N^2}} = \frac{P_o - P_e}{1 - P_e}$, onde P = acurácia
+
+K > 0.75: Excelente  
+0.40 > K > 0.75: Bom  
+K < 0.40: pobre
+
+- **TSS (*True Skill Statistic*) [-1 a +1]**
+
+$TSS = \frac{ad-bc}{(a+c)(b+d)} = Sensitividade + Especificidade - 1$
+
+TSS ≅ +1: concordância perfeita  
+TSS <= 0: desempenho não melhor do que aleatório  
+Indicativos: TSS > 0.5, TSS > 0.7, TSS > 0.8 e TSS > 0.9
+
+![](img/sdm_avaliacao_kappa_tss.png){.absolute width=350 height=500 right=-100 top=150}
+
+:::footer
+[Landis & Koch (1977)](),
+[Fielding & Bell (1997)](https://www.cambridge.org/core/product/identifier/S0376892997000088/type/journal_article),
+[Allouche et al. (2006)](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01214.x)
+:::
+
+## Visão geral
+
+<center>
+<img src="img/sdm_guisan_general.png" style="width:80%"/>
+</center>
+
+:::footer
+[Guisan et al. (2017)](https://www.cambridge.org/br/academic/subjects/life-sciences/ecology-and-conservation/habitat-suitability-and-distribution-models-applications-r)
+:::
+
+## Visão geral
+
+**Protocolo padrão para modelos de distribuição de espécies**
+
+<center>
+<img src="img/sdm_zurell_standard.png" style="width:100%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+# 5. Predição no espaço e no tempo
+
+## Predição
+
+Estimar a distribuição para onde não temos dados
+
+<center>
+<img src="img/sdm_geral_predicao.png" style="width:70%"/>
+</center>
+
+:::footer
+[Zurell et al. (2020)](https://onlinelibrary.wiley.com/doi/10.1111/ecog.04960)
+:::
+
+## Predição
+
+**Diferentes estimativas do nicho geram diferentes predições geográficas**
+
+![](img/sdm_ensemble_nichos.png){.absolute width=650 height=450 right=400 top=200}
+![](img/sdm_ensemble.jpg){.absolute width=550 height=450 right=-100 top=200}
+
+:::footer
+[Araújo & New (2007)](https://doi.org/10.1016/j.tree.2006.09.010://doi.org/10.1002/ece3.1418),
+[Qiao et al. (2015)](https://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12397)
+:::
+
+## Predição
+
+**Consenso (*ensemble*)**
+
+- Frequência
+- Média
+- Média ponderada (AUC ou TSS)
+
+![](img/sdm_fletcher_fortin_ensemble.png){.absolute width=500 height=600 right=-100 top=100}
+
+:::footer
+[Fletcher & Fortin (2018)](https://www.springer.com/gp/book/9783030019884)
+:::
+
+## Consenso (*ensemble*) {.smaller}
+
+**Frequência**: contabilizar pixels previstos como presença
+
+1. Uso de um limiar de corte para binarizar os modelos [0 e 1]
+1. Soma da quantidade de pixels e divisão pelo total de modelos [0 a 1]
+$$ consenso = \sum_{i=1}^{N} (pixel_i \geq limiar_j) $$
+
+<center>
+<img src="img/sdm_ensemble_freq.png" style="width:100%"/>
+</center>
+
+## Consenso (*ensemble*) {.smaller}
+
+**Média**: calcular a média dos valores de adequabilidade para cada pixel
+
+1. Padronização dos valores de adequabilidade [0 a 1]
+1. Cálculo da média aritmética de cada pixel
+
+$$ consenso = \frac{1}{N}\sum_{i=1}^{N} (pixel_i) $$
+
+<center>
+<img src="img/sdm_ensemble_media.png" style="width:70%"/>
+</center>
+
+## Consenso (*ensemble*) {.smaller}
+
+**Média ponderada**: calcular a média ponderada dos valores de adeq.
+
+1. Padronização dos valores de adequabilidade [0 a 1]
+1. Cálculo da média ponderada pelos valores de AUC ou TSS de cada pixel
+
+$$consenso = \frac{\sum_{i=1}^{N}(w_i . pixel_i)}{\sum_{i=1}^N(w_i)}$$
+
+<center>
+<img src="img/sdm_ensemble_media_ponderada.png" style="width:70%"/>
+</center>
+
+## Consenso (*ensemble*) {.smaller}
+
+**Incertezas**: calcular um valor de incerteza para cada pixel
+
+1. Padronização dos valores de adequabilidade [0 a 1]
+1. Cálculo do desvio padrão ou partição da variância de cada pixel
+
+$$ desvio = \sqrt{\frac{1}{N}\sum_{i=1}^{N} (pixel_i - \overline{pixel_i})^2} $$
+
+<center>
+<img src="img/sdm_ensemble_desvio.png" style="width:70%"/>
+</center>
+
+## Consenso (*ensemble*) {.smaller}
+
+**Incertezas**: calcular um valor de incerteza para cada pixel
+
+1. Padronização dos valores de adequabilidade [0 a 1]
+1. Cálculo do desvio padrão ou partição da variância de cada pixel
+
+![](img/sdm_consenso_incertezas.png){.absolute width=550 height=350 right=500 top=300}
+![](img/sdm_consenso_incertezas_mapa.png){.absolute width=600 height=300 right=-100 top=350}
+
+:::footer
+[Diniz-Filho et al. (2009)](https://onlinelibrary.wiley.com/doi/10.1111/j.1600-0587.2009.06196.x)
+:::
+
+# Aplicações
+
+# Conservação
+
+## Conservação {.smaller}
+
+**Impacto da mineração sobre anuros e aves na Serra do Espinhaço**
+
+<center>
+<img src="img/artigos/pena_etal_2017/00_pena_etal_2017.png" style="width:100%"/>
+</center>
+
+:::footer
+[Pena et al. (2017)](https://doi.org/10.1016/j.pecon.2017.07.005)
+:::
+
+## Conservação {.smaller}
+
+**Eficiência das áreas protegidas da Amazônia e Mata Atlântica**
+
+<center>
+<img src="img/artigos/sobral_souza_etal_2018/00_sobral_souza_etal_2018.png" style="width:100%"/>
+</center>
+
+:::footer
+[Sobral-Souza et al. (2018)](https://doi.org/10.1016/j.actao.2018.01.001)
+:::
+
+# Relações ecológicas
+
+## Relações ecológicas {.smaller}
+
+**Distribuição de macroalgas epífitas e hospedeiras em Cuba**
+
+<center>
+<img src="img/artigos/jover_etal_2021/00_jover_etal_2021.png" style="width:100%"/>
+</center>
+
+:::footer
+[Jover et al. (2021)](https://doi.org/10.1016/j.aquabot.2021.103395)
+:::
+
+# Ecologia da Paisagem
+
+## Ecologia da Paisagem {.smaller}
+
+**Clima, paisagem e riqueza de borboletas na Mata Atlântica**
+
+<center>
+<img src="img/artigos/santos_etal_2020/00_santos_etal_2020.png" style="width:100%"/>
+</center>
+
+:::footer
+[Santos et al. (2019)](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.1484), [Santos et al. (2020)](https://doi.org/10.1111/ddi.13007)
+:::
+
+## Ecologia da Paisagem {.smaller}
+
+**Regiões prioritárias para conservação das queixadas no Brasil**
+
+<center>
+<img src="img/artigos/oshima_etal_2021/00_oshima_etal_2021.png" style="width:100%"/>
+</center>
+
+:::footer
+[Oshima et al. (2021)](https://doi.org/10.1016/j.gecco.2021.e01796)
+:::
+
+## Ecologia da Paisagem {.smaller}
+
+**Expansão da cana sobre o tamanduá em São Paulo**
+
+<center>
+<img src="img/artigos/bertassoni_etal_2018/00_bertassoni_etal_2018.png" style="width:100%"/>
+</center>
+
+:::footer
+[Bertassoni et al. (2019)](https://doi.org/10.1093/jmammal/gyz042)
+:::
+
+# Doenças
+
+## Doenças {.smaller}
+
+**Áreas de transmissão de Chagas (*Trypanosoma cruzi*) no Paraná**
+
+<center>
+<img src="img/artigos/ferro_silva_etal_2018/00_ferro_silva_etal_2018.png" style="width:100%"/>
+</center>
+
+:::footer
+[Ferro-e-Silva et al. (2018)](https://doi.org/10.1371/journal.pntd.0006907)
+:::
+
+## Doenças {.smaller}
+
+**Mudanças climáticas e distribuição de morcegos que transmitem sarbecovírus (COVID)**
+
+<center>
+<img src="img/artigos/muylaert_etal_2022/00_muylaert_etal_2022.png" style="width:100%"/>
+</center>
+
+:::footer
+[Muylaert et al. (2022)](https://doi.org/10.1098/rspb.2022.0397)
+:::
+
+# Invasão biológica
+
+## Invasão biológica {.smaller}
+
+**Zonas de hibridização potencial de saguis no Brasil**
+
+![](img/artigos/moraes_etal_2019/00_moraes_etal_2019.png){.absolute width=1000 height=500 right=0 top=150}
+
+:::footer
+[Moraes et al. (2019)](https://doi.org/10.1016/j.gecco.2019.e00706)
+:::
+
+## Invasão biológica {.smaller}
+
+**Sobreposição de palmeira nativa e invasora na Mata Atlântica**
+
+<center>
+<img src="img/artigos/bello_etal_2021/00_bello_etal_2021.png" style="width:90%"/>
+</center>
+
+:::footer
+[Bello et al. (2021)](https://doi.org/10.1007/s10530-020-02400-8)
+:::
+
+## Invasão biológica {.smaller}
+
+**Áreas de sobreposição de um cervídeo nativo e do javaporco na Argentina**
+
+<center>
+<img src="img/artigos/berce_etal_2021/00_berce_etal_2021.png" style="width:100%"/>
+</center>
+
+:::footer
+[Bercê et al. (2021)](https://doi.org/10.1093/jmammal/gyab099)
+:::
+
+# Mudanças Climáticas
+
+## Mudanças Climáticas {.smaller}
+
+**Mudanças climáticas e migração de sabiás na América do Sul**
+
+![](img/artigos/stefanini_etal_2021/00_stefanini_etal_2021.png){.absolute width=1000 height=500 right=50 top=150}
+
+:::footer
+[Stefanini et al. (2021)](https://doi.org/10.1093/ornithapp/duab006)
+:::
+
+## Mudanças Climáticas {.smaller}
+
+**Mudanças climáticas sobre duas espécies de marsupiais na América do Sul**
+
+<center>
+<img src="img/artigos/ribeiro_souza_etal_2022/00_ribeiro_souza_etal_2022.png" style="width:100%"/>
+</center>
+
+:::footer
+[Ribeiro-Souza et al. (2022)](https://doi.org/10.1016/j.ecoinf.2022.101570)
+:::
+
+## Mudanças Climáticas {.smaller}
+
+**Mudanças climáticas sobre duas espécies de palmeiras na América do Sul**
+
+<center>
+<img src="img/artigos/costa_etal_2022/00_costa_etal_2022.png" style="width:100%"/>
+</center>
+
+:::footer
+[Costa et al. (2022)](https://doi.org/10.1007/s40415-022-00801-8)
+:::
+
+## Mudanças Climáticas {.smaller}
+
+**Mudanças climáticas e regeneração para preguiça de coleira na Mata Atlântica**
+
+<center>
+<img src="img/artigos/santos_etal_2022/00_santos_etal_2022.png" style="width:90%"/>
+</center>
+
+:::footer
+[Santos et al. (2022)](https://doi.org/10.1093/jmammal/gyac084)
+:::
+
+# Material
+
+## Artigos {.smaller}
+
+- [De Marco, P., & Siquera, M. F. (2009). Como determinar a distribuição potencial de espécies sob uma abordagem conservacionista? 5, 12.](https://www.conservation.org/docs/default-source/brasil/Megadiversidade_desafios_cientificos.pdf)
+
+- [Giannini, T. C. et al. (2012). Desafios atuais da modelagem preditiva de distribuição de espécies. Rodriguésia, 63(3), 733–749.](https://doi.org/10.1590/S2175-78602012000300017)
+
+- [Araújo, M. B. et al. (2019). Standards for distribution models in biodiversity assessments. Science Advances, 5(1), eaat4858.](https://doi.org/10.1126/sciadv.aat4858)
+
+- [Feng, X. et al. (2019). A checklist for maximizing reproducibility of ecological niche models. Nature Ecology & Evolution, 3(10), 1382–1395.](https://doi.org/10.1038/s41559-019-0972-5)
+
+- [Zurell, D. et al. (2020). A standard protocol for reporting species distribution models. Ecography, 43(9), 1261–1277.](https://doi.org/10.1111/ecog.04960)
+
+- [Sillero, N., & Barbosa, A. M. (2021). Common mistakes in ecological niche models. International Journal of Geographical Information Science, 35(2), 213–226.](https://doi.org/10.1080/13658816.2020.1798968)
+
+- [Sillero, N. et al. (2021). Want to model a species niche? A step-by-step guideline on correlative ecological niche modelling. Ecological Modelling, 456, 109671.](https://doi.org/10.1016/j.ecolmodel.2021.109671)
+
+## Livros {.smaller}
+
+- [Lima-Ribeiro, M., & Diniz-Filho, J. (2013). Modelos ecológicos ea extinção da megafauna: Clima e homem na América do Sul.](https://files.cercomp.ufg.br/weby/up/672/o/Paleoecologia_completo.pdf)
+
+- [Franklin, J., & Miller, J. A. (2009). Mapping species distributions: Spatial inference and prediction. Cambridge University Press.](https://doi.org/10.1017/CBO9780511810602)
+
+- [Peterson, A. T. (Org.). (2011). Ecological niches and geographic distributions. Princeton University Press.](https://press.princeton.edu/books/paperback/9780691136882/ecological-niches-and-geographic-distributions-mpb-49)
+
+- [Peterson, A. T. (2014). Mapping disease transmission risk: Enriching models using biogeography and ecology. Johns Hopkins University Press.](https://jhupbooks.press.jhu.edu/title/mapping-disease-transmission-risk)
+
+- [Wegmann, M., Leutner, B., & Dech, S. (Orgs.). (2016). Remote sensing and GIS for ecologists: Using open source software. Pelagic Publishing.](http://book.ecosens.org/RSEbook/)
+
+- [Guisan, A., Thuiller, W., & Zimmermann, N. E. (2017). Habitat Suitability and Distribution Models: With Applications in R. Cambridge University Press.](https://doi.org/10.1017/9781139028271)
+
+- [Fletcher, R., & Fortin, M.-J. (2018). Spatial Ecology and Conservation Modeling: Applications with R. Springer International Publishing.](https://doi.org/10.1007/978-3-030-01989-1)
+
+=======
+>>>>>>> parent of d4e074a (update 0.3)
 ## Muito obrigado!
 
 ::: columns
@@ -1255,9 +1749,7 @@ Agradecimentos:
 
 - [Fapesp #2022/01899-6](https://bv.fapesp.br/pt/bolsas/203713/estrutura-da-paisagem-como-preditor-da-diversidade-taxonomica-e-funcional-de-anfibios-na-mata-atlant/)
 
-<center>
-<img src="img/fapesp.png" style="width:60%"/>
-</center>
+![](img/fapesp.png){.absolute width=280 height=90 right=700 top=570}
 
 :::
 
