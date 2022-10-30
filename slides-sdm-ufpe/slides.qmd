@@ -1733,8 +1733,6 @@ $$ desvio = \sqrt{\frac{1}{N}\sum_{i=1}^{N} (pixel_i - \overline{pixel_i})^2} $$
 
 - [Fletcher, R., & Fortin, M.-J. (2018). Spatial Ecology and Conservation Modeling: Applications with R. Springer International Publishing.](https://doi.org/10.1007/978-3-030-01989-1)
 
-=======
->>>>>>> parent of d4e074a (update 0.3)
 ## Muito obrigado!
 
 ::: columns
