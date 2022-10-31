@@ -76,7 +76,7 @@ format:
 
 ::: {.column width="60%"}
 
-- 15 capítulos: linguagem R, `tidyverse`, perguntas em ecologia, análises univariadas, multivariadas e geoespaciais
+- 15 capítulos: linguagem R, tidyverse, perguntas em ecologia, análises univariadas, multivariadas e geoespaciais
 
 - [bookdown](https://analises-ecologicas.com/)
 
@@ -243,7 +243,7 @@ Inferir a **distribuição das espécies** sem estimar o nicho ecológico
 
 ## Modelagem de nicho ecológico
 
-Combinações de requisitos que permitem a uma população sobreviver e crescer (r > 0) em um determinado lugar
+Combinações de condições que permitem a uma população sobreviver e crescer (r >= 0) em um determinado lugar
 
 ![](img/sdm_r.png){.absolute width=400 height=400 right=600 top=240}
 ![](img/sdm_verhulst_grafico.png){.absolute width=500 height=400 right=50 top=250}
@@ -259,8 +259,8 @@ Combinações de requisitos que permitem a uma população sobreviver e crescer 
 
 ## Modelagem de nicho ecológico {.smaller}
 
-- Podemos associar a taxa de crescimento intrínseca (r) com as condições ambientais 
-- O modelo então estima as condições ambientais favoráveis (nicho ecológico) e prediz a distribuição da espécie
+- Podemos associar a taxa de crescimento intrínseca (r) com as condições favoráveis
+- O modelo então estima as condições favoráveis (nicho ecológico) no Espaço Ambiental (E) e prediz a distribuição da espécie Espaço Geográfico (G)
 
 ![](img/sdm_nicho_r_ambiental.png){.absolute width=400 height=400 right=600 top=250}
 ![](img/sdm_nicho_r_geografico.png){.absolute width=500 height=400 right=50 top=250}
@@ -794,7 +794,6 @@ ocorrência e não ocorre nas regiões inadequadas
 [Owens et al. (2021)](https://doi.org/10.1111/ecog.05618)
 :::
 
-<<<<<<< HEAD
 ## Ocorrências {.smaller}
 
 **Viés de amostragem - Brasil**
@@ -862,7 +861,7 @@ ocorrência e não ocorre nas regiões inadequadas
 **Interpolação**
 
 <center>
-<img src="img/var_interpolation.png" style="width:60%"/>
+<img src="img/sdm_var_interpolacao.png" style="width:65%"/>
 </center>
 
 :::footer
@@ -1257,7 +1256,7 @@ Envelope elíptico reflete melhor a tendência central da teoria do nicho
 - [ssdm](https://cran.r-project.org/web/packages/ssdm/)
 - [ShinyBIOMOD](https://gitlab.com/IanOndo/shinybiomod)
 
-![](img/sdm_algo.png){.absolute width=420 height=550 right=100 top=120}
+![](img/sdm_sdm_pkg.png){.absolute width=420 height=550 right=100 top=120}
 
 :::footer
 [Lista de pacotes no R](https://github.com/helixcn/sdm_r_packages)
