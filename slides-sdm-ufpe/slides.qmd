@@ -1688,7 +1688,7 @@ $$ desvio = \sqrt{\frac{1}{N}\sum_{i=1}^{N} (pixel_i - \overline{pixel_i})^2} $$
 
 ## Mudanças Climáticas {.smaller}
 
-**Mudanças climáticas e regeneração para preguiça de coleira na Mata Atlântica**
+**Mudanças climáticas e regeneração para preguiça-de-coleira na Mata Atlântica**
 
 <center>
 <img src="img/artigos/santos_etal_2022/00_santos_etal_2022.png" style="width:90%"/>
