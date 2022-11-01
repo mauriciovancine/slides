@@ -163,7 +163,7 @@ format:
 
 ## Modelos [científicos]
 
-Idealizações da realidade e não a própria realidade
+Idealizações da realidade com o objetivo de entendê-la
 
 <center>
 <img src="img/general_models.png" style="width:80%"/>
@@ -368,7 +368,7 @@ Condições ambientais favoráveis limitadas pela interação
 [Peterson et al. (2011)](https://www.degruyter.com/document/doi/10.1515/9781400840670/html)
 :::
 
-## Nicho
+## Nicho ecológico
 
 Hipervolume n-dimensional
 
@@ -1640,7 +1640,7 @@ $$ desvio = \sqrt{\frac{1}{N}\sum_{i=1}^{N} (pixel_i - \overline{pixel_i})^2} $$
 
 ## Invasão biológica {.smaller}
 
-**Áreas de sobreposição de um cervídeo nativo e do javaporco na Argentina**
+**Áreas de sobreposição de um cervídeo nativo e javaporco na Argentina**
 
 <center>
 <img src="img/artigos/berce_etal_2021/00_berce_etal_2021.png" style="width:100%"/>
