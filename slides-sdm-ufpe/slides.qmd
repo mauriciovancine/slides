@@ -1604,7 +1604,7 @@ $$ desvio = \sqrt{\frac{1}{N}\sum_{i=1}^{N} (pixel_i - \overline{pixel_i})^2} $$
 
 ## Doenças {.smaller}
 
-**Mudanças climáticas e distribuição de morcegos que transmitem sarbecovírus (COVID)**
+**Mudanças climáticas e distribuição de morcegos que hospedam vírus da SARS**
 
 <center>
 <img src="img/artigos/muylaert_etal_2022/00_muylaert_etal_2022.png" style="width:100%"/>
