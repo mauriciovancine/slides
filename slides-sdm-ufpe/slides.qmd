@@ -761,6 +761,7 @@ ocorrência e não ocorre nas regiões inadequadas
 - [Ocean Biogeographic Information System (OBIS)](https://obis.org/)
 - [Botanical Information and Ecology Network (BIEN)](https://bien.nceas.ucsb.edu/bien/)
 - [speciesLink](https://specieslink.net/)
+- [SIBBr](https://www.sibbr.gov.br/?lang=pt_BR)
 
 ![](img/sdm_occ_fontes.png){.absolute width=450 height=650 right=-50 top=50}
 
